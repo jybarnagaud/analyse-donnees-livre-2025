@@ -1,0 +1,1640 @@
+maille;periode;espece;nombre
+1;1;accenteur mouchet;8
+16;1;accenteur mouchet;4
+25;1;accenteur mouchet;2
+30;1;accenteur mouchet;1
+63;1;accenteur mouchet;3
+143;1;accenteur mouchet;2
+166;1;accenteur mouchet;3
+168;1;accenteur mouchet;7
+182;1;accenteur mouchet;1
+199;1;accenteur mouchet;3
+213;1;accenteur mouchet;1
+242;1;accenteur mouchet;1
+260;1;accenteur mouchet;3
+271;1;accenteur mouchet;3
+354;1;accenteur mouchet;3
+385;1;accenteur mouchet;5
+434;1;accenteur mouchet;1
+443;1;accenteur mouchet;3
+452;1;accenteur mouchet;2
+490;1;accenteur mouchet;3
+506;1;accenteur mouchet;4
+524;1;accenteur mouchet;1
+682;1;accenteur mouchet;2
+689;1;accenteur mouchet;3
+695;1;accenteur mouchet;3
+708;1;accenteur mouchet;6
+16;2;accenteur mouchet;2
+58;2;accenteur mouchet;2
+143;2;accenteur mouchet;1
+166;2;accenteur mouchet;2
+168;2;accenteur mouchet;1
+182;2;accenteur mouchet;5
+213;2;accenteur mouchet;1
+242;2;accenteur mouchet;3
+260;2;accenteur mouchet;1
+271;2;accenteur mouchet;1
+354;2;accenteur mouchet;1
+385;2;accenteur mouchet;3
+434;2;accenteur mouchet;1
+443;2;accenteur mouchet;1
+452;2;accenteur mouchet;7
+490;2;accenteur mouchet;2
+506;2;accenteur mouchet;5
+524;2;accenteur mouchet;1
+682;2;accenteur mouchet;3
+689;2;accenteur mouchet;3
+695;2;accenteur mouchet;1
+708;2;accenteur mouchet;2
+771;2;accenteur mouchet;3
+354;1;aigrette garzette;1
+354;2;aigrette garzette;1
+58;1;alouette des champs;1
+143;1;alouette des champs;3
+166;1;alouette des champs;1
+199;1;alouette des champs;1
+213;1;alouette des champs;6
+260;1;alouette des champs;2
+271;1;alouette des champs;3
+354;1;alouette des champs;4
+452;1;alouette des champs;1
+490;1;alouette des champs;4
+682;1;alouette des champs;1
+791;1;alouette des champs;2
+58;2;alouette des champs;3
+199;2;alouette des champs;3
+213;2;alouette des champs;1
+271;2;alouette des champs;2
+354;2;alouette des champs;7
+443;2;alouette des champs;1
+452;2;alouette des champs;1
+490;2;alouette des champs;9
+524;2;alouette des champs;1
+682;2;alouette des champs;1
+689;2;alouette des champs;5
+168;1;alouette lulu;1
+260;1;alouette lulu;5
+443;1;alouette lulu;1
+452;1;alouette lulu;3
+506;1;alouette lulu;2
+682;1;alouette lulu;2
+1;2;alouette lulu;1
+16;2;alouette lulu;2
+182;2;alouette lulu;1
+213;2;alouette lulu;1
+452;2;alouette lulu;5
+506;2;alouette lulu;1
+771;2;alouette lulu;1
+53;1;bergeronnette grise;3
+58;1;bergeronnette grise;1
+143;1;bergeronnette grise;3
+182;1;bergeronnette grise;1
+199;1;bergeronnette grise;1
+260;1;bergeronnette grise;3
+271;1;bergeronnette grise;5
+434;1;bergeronnette grise;1
+490;1;bergeronnette grise;1
+524;1;bergeronnette grise;2
+682;1;bergeronnette grise;4
+695;1;bergeronnette grise;1
+702;1;bergeronnette grise;1
+708;1;bergeronnette grise;2
+791;1;bergeronnette grise;1
+16;2;bergeronnette grise;1
+143;2;bergeronnette grise;2
+166;2;bergeronnette grise;1
+199;2;bergeronnette grise;4
+260;2;bergeronnette grise;1
+354;2;bergeronnette grise;2
+385;2;bergeronnette grise;1
+434;2;bergeronnette grise;1
+506;2;bergeronnette grise;1
+524;2;bergeronnette grise;1
+695;2;bergeronnette grise;1
+702;2;bergeronnette grise;1
+708;2;bergeronnette grise;2
+771;2;bergeronnette grise;3
+791;2;bergeronnette grise;1
+30;1;bergeronnette printaniere;1
+63;1;bergeronnette printaniere;1
+260;1;bergeronnette printaniere;1
+682;1;bergeronnette printaniere;1
+702;1;bergeronnette printaniere;2
+58;2;bergeronnette printaniere;1
+354;2;bergeronnette printaniere;3
+490;2;bergeronnette printaniere;1
+708;2;bergeronnette printaniere;1
+166;1;bondree apivore;1
+434;2;bondree apivore;1
+354;1;bouscarle de cetti;2
+199;2;bouscarle de cetti;1
+354;2;bouscarle de cetti;1
+434;2;bruant des roseaux;2
+1;1;bruant jaune;6
+25;1;bruant jaune;1
+30;1;bruant jaune;1
+166;1;bruant jaune;2
+168;1;bruant jaune;1
+199;1;bruant jaune;1
+213;1;bruant jaune;6
+354;1;bruant jaune;2
+443;1;bruant jaune;2
+452;1;bruant jaune;2
+506;1;bruant jaune;2
+524;1;bruant jaune;1
+682;1;bruant jaune;1
+689;1;bruant jaune;1
+702;1;bruant jaune;1
+791;1;bruant jaune;1
+1;2;bruant jaune;3
+166;2;bruant jaune;1
+168;2;bruant jaune;3
+199;2;bruant jaune;4
+213;2;bruant jaune;6
+242;2;bruant jaune;1
+260;2;bruant jaune;1
+354;2;bruant jaune;2
+443;2;bruant jaune;3
+452;2;bruant jaune;2
+490;2;bruant jaune;1
+506;2;bruant jaune;1
+682;2;bruant jaune;2
+702;2;bruant jaune;1
+354;2;bruant proyer;1
+443;1;bruant zizi;1
+506;1;bruant zizi;1
+524;1;bruant zizi;1
+791;1;bruant zizi;1
+1;2;bruant zizi;1
+182;2;bruant zizi;1
+385;2;bruant zizi;2
+452;2;bruant zizi;2
+682;2;bruant zizi;1
+791;2;bruant zizi;1
+242;2;busard saint martin;1
+16;1;buse variable;1
+30;1;buse variable;2
+53;1;buse variable;1
+58;1;buse variable;3
+63;1;buse variable;3
+143;1;buse variable;2
+168;1;buse variable;2
+182;1;buse variable;1
+242;1;buse variable;3
+354;1;buse variable;1
+452;1;buse variable;1
+490;1;buse variable;1
+506;1;buse variable;1
+682;1;buse variable;3
+689;1;buse variable;1
+695;1;buse variable;1
+702;1;buse variable;4
+708;1;buse variable;2
+771;1;buse variable;1
+16;2;buse variable;2
+143;2;buse variable;5
+242;2;buse variable;2
+260;2;buse variable;1
+271;2;buse variable;1
+354;2;buse variable;2
+434;2;buse variable;1
+443;2;buse variable;1
+506;2;buse variable;2
+682;2;buse variable;3
+689;2;buse variable;3
+702;2;buse variable;2
+791;2;buse variable;2
+1;2;caille des bles;1
+58;2;caille des bles;1
+143;2;caille des bles;3
+199;2;caille des bles;3
+271;2;caille des bles;1
+25;1;canard colvert;1
+30;1;canard colvert;2
+58;1;canard colvert;2
+63;1;canard colvert;2
+143;1;canard colvert;5
+168;1;canard colvert;1
+199;1;canard colvert;2
+271;1;canard colvert;2
+354;1;canard colvert;2
+385;1;canard colvert;1
+434;1;canard colvert;2
+443;1;canard colvert;1
+506;1;canard colvert;5
+695;1;canard colvert;1
+58;2;canard colvert;3
+166;2;canard colvert;1
+354;2;canard colvert;1
+434;2;canard colvert;3
+689;2;canard colvert;1
+53;1;chardonneret elegant;2
+58;1;chardonneret elegant;1
+166;1;chardonneret elegant;5
+168;1;chardonneret elegant;3
+385;1;chardonneret elegant;2
+452;1;chardonneret elegant;2
+506;1;chardonneret elegant;8
+682;1;chardonneret elegant;1
+689;1;chardonneret elegant;2
+702;1;chardonneret elegant;1
+1;2;chardonneret elegant;2
+182;2;chardonneret elegant;2
+199;2;chardonneret elegant;2
+213;2;chardonneret elegant;1
+260;2;chardonneret elegant;2
+354;2;chardonneret elegant;1
+385;2;chardonneret elegant;5
+434;2;chardonneret elegant;2
+506;2;chardonneret elegant;1
+524;2;chardonneret elegant;1
+695;2;chardonneret elegant;1
+771;2;chardonneret elegant;3
+791;2;chardonneret elegant;2
+63;1;choucas des tours;7
+182;1;choucas des tours;2
+199;1;choucas des tours;4
+385;1;choucas des tours;2
+443;1;choucas des tours;4
+452;1;choucas des tours;2
+490;1;choucas des tours;11
+168;2;choucas des tours;2
+199;2;choucas des tours;10
+260;2;choucas des tours;3
+354;2;choucas des tours;4
+682;2;choucas des tours;1
+695;1;chouette hulotte;1
+354;1;cisticole des joncs;5
+506;1;cisticole des joncs;1
+354;2;cisticole des joncs;2
+506;2;cisticole des joncs;3
+1;1;corbeau freux;1
+16;1;corbeau freux;36
+166;1;corbeau freux;6
+199;1;corbeau freux;4
+385;1;corbeau freux;3
+490;1;corbeau freux;3
+695;1;corbeau freux;2
+702;1;corbeau freux;94
+791;1;corbeau freux;5
+16;2;corbeau freux;1
+213;2;corbeau freux;4
+260;2;corbeau freux;1
+271;2;corbeau freux;18
+506;2;corbeau freux;1
+695;2;corbeau freux;7
+1;1;corneille noire;19
+16;1;corneille noire;39
+25;1;corneille noire;22
+30;1;corneille noire;42
+53;1;corneille noire;2
+58;1;corneille noire;12
+63;1;corneille noire;23
+143;1;corneille noire;20
+166;1;corneille noire;12
+168;1;corneille noire;16
+182;1;corneille noire;19
+199;1;corneille noire;13
+213;1;corneille noire;26
+242;1;corneille noire;6
+260;1;corneille noire;7
+271;1;corneille noire;26
+354;1;corneille noire;11
+385;1;corneille noire;7
+434;1;corneille noire;8
+443;1;corneille noire;17
+452;1;corneille noire;16
+490;1;corneille noire;11
+506;1;corneille noire;19
+524;1;corneille noire;8
+682;1;corneille noire;7
+689;1;corneille noire;20
+695;1;corneille noire;16
+708;1;corneille noire;19
+771;1;corneille noire;13
+791;1;corneille noire;16
+1;2;corneille noire;17
+16;2;corneille noire;35
+58;2;corneille noire;26
+143;2;corneille noire;15
+166;2;corneille noire;11
+168;2;corneille noire;20
+182;2;corneille noire;11
+199;2;corneille noire;17
+213;2;corneille noire;11
+242;2;corneille noire;4
+260;2;corneille noire;16
+271;2;corneille noire;19
+354;2;corneille noire;16
+385;2;corneille noire;13
+434;2;corneille noire;7
+443;2;corneille noire;34
+452;2;corneille noire;11
+490;2;corneille noire;24
+506;2;corneille noire;14
+524;2;corneille noire;24
+682;2;corneille noire;14
+689;2;corneille noire;19
+695;2;corneille noire;10
+702;2;corneille noire;19
+708;2;corneille noire;18
+771;2;corneille noire;2
+791;2;corneille noire;18
+63;1;coucou gris;1
+213;1;coucou gris;2
+242;1;coucou gris;1
+354;1;coucou gris;3
+385;1;coucou gris;2
+452;1;coucou gris;5
+490;1;coucou gris;2
+506;1;coucou gris;2
+524;1;coucou gris;1
+695;1;coucou gris;2
+771;1;coucou gris;2
+791;1;coucou gris;1
+16;2;coucou gris;1
+182;2;coucou gris;1
+242;2;coucou gris;1
+354;2;coucou gris;1
+385;2;coucou gris;5
+695;2;coucou gris;1
+771;1;courlis cendré;1
+791;2;epervier d europe;1
+1;1;etourneau sansonnet;4
+16;1;etourneau sansonnet;32
+25;1;etourneau sansonnet;6
+30;1;etourneau sansonnet;6
+53;1;etourneau sansonnet;5
+58;1;etourneau sansonnet;7
+63;1;etourneau sansonnet;7
+143;1;etourneau sansonnet;32
+166;1;etourneau sansonnet;10
+168;1;etourneau sansonnet;7
+182;1;etourneau sansonnet;7
+199;1;etourneau sansonnet;11
+213;1;etourneau sansonnet;4
+242;1;etourneau sansonnet;12
+260;1;etourneau sansonnet;7
+271;1;etourneau sansonnet;2
+354;1;etourneau sansonnet;7
+385;1;etourneau sansonnet;14
+434;1;etourneau sansonnet;6
+443;1;etourneau sansonnet;3
+452;1;etourneau sansonnet;5
+490;1;etourneau sansonnet;13
+506;1;etourneau sansonnet;12
+682;1;etourneau sansonnet;32
+689;1;etourneau sansonnet;8
+695;1;etourneau sansonnet;15
+702;1;etourneau sansonnet;10
+708;1;etourneau sansonnet;29
+771;1;etourneau sansonnet;1
+1;2;etourneau sansonnet;2
+16;2;etourneau sansonnet;24
+58;2;etourneau sansonnet;32
+143;2;etourneau sansonnet;212
+166;2;etourneau sansonnet;13
+182;2;etourneau sansonnet;5
+199;2;etourneau sansonnet;8
+213;2;etourneau sansonnet;4
+242;2;etourneau sansonnet;1
+260;2;etourneau sansonnet;7
+271;2;etourneau sansonnet;4
+354;2;etourneau sansonnet;32
+385;2;etourneau sansonnet;7
+434;2;etourneau sansonnet;2
+452;2;etourneau sansonnet;5
+490;2;etourneau sansonnet;24
+506;2;etourneau sansonnet;1
+524;2;etourneau sansonnet;2
+682;2;etourneau sansonnet;5
+689;2;etourneau sansonnet;5
+695;2;etourneau sansonnet;5
+702;2;etourneau sansonnet;78
+708;2;etourneau sansonnet;2
+771;2;etourneau sansonnet;1
+791;2;etourneau sansonnet;8
+25;1;faisan de colchide;2
+30;1;faisan de colchide;1
+58;1;faisan de colchide;1
+63;1;faisan de colchide;1
+166;1;faisan de colchide;1
+199;1;faisan de colchide;2
+213;1;faisan de colchide;3
+242;1;faisan de colchide;2
+385;1;faisan de colchide;2
+434;1;faisan de colchide;1
+443;1;faisan de colchide;1
+452;1;faisan de colchide;1
+490;1;faisan de colchide;6
+506;1;faisan de colchide;3
+524;1;faisan de colchide;1
+702;1;faisan de colchide;2
+166;2;faisan de colchide;2
+199;2;faisan de colchide;1
+354;2;faisan de colchide;2
+385;2;faisan de colchide;2
+490;2;faisan de colchide;4
+689;2;faisan de colchide;1
+708;2;faisan de colchide;3
+58;1;faucon crecerelle;1
+63;1;faucon crecerelle;1
+199;1;faucon crecerelle;1
+506;1;faucon crecerelle;1
+689;1;faucon crecerelle;2
+702;1;faucon crecerelle;1
+143;2;faucon crecerelle;2
+199;2;faucon crecerelle;1
+242;2;faucon crecerelle;1
+260;2;faucon crecerelle;1
+682;2;faucon crecerelle;1
+702;2;faucon crecerelle;2
+143;1;faucon hobereau;1
+143;2;faucon hobereau;1
+1;1;fauvette a tete noire;6
+16;1;fauvette a tete noire;2
+25;1;fauvette a tete noire;9
+30;1;fauvette a tete noire;8
+53;1;fauvette a tete noire;11
+58;1;fauvette a tete noire;7
+63;1;fauvette a tete noire;6
+143;1;fauvette a tete noire;8
+166;1;fauvette a tete noire;3
+168;1;fauvette a tete noire;7
+182;1;fauvette a tete noire;10
+199;1;fauvette a tete noire;2
+213;1;fauvette a tete noire;4
+242;1;fauvette a tete noire;10
+260;1;fauvette a tete noire;9
+271;1;fauvette a tete noire;10
+354;1;fauvette a tete noire;3
+385;1;fauvette a tete noire;8
+434;1;fauvette a tete noire;13
+443;1;fauvette a tete noire;6
+452;1;fauvette a tete noire;15
+490;1;fauvette a tete noire;8
+506;1;fauvette a tete noire;8
+524;1;fauvette a tete noire;13
+682;1;fauvette a tete noire;7
+689;1;fauvette a tete noire;4
+695;1;fauvette a tete noire;3
+702;1;fauvette a tete noire;3
+708;1;fauvette a tete noire;4
+771;1;fauvette a tete noire;11
+791;1;fauvette a tete noire;5
+1;2;fauvette a tete noire;8
+16;2;fauvette a tete noire;5
+58;2;fauvette a tete noire;4
+143;2;fauvette a tete noire;5
+166;2;fauvette a tete noire;8
+168;2;fauvette a tete noire;11
+182;2;fauvette a tete noire;3
+199;2;fauvette a tete noire;6
+242;2;fauvette a tete noire;3
+260;2;fauvette a tete noire;2
+271;2;fauvette a tete noire;10
+354;2;fauvette a tete noire;3
+385;2;fauvette a tete noire;8
+434;2;fauvette a tete noire;11
+443;2;fauvette a tete noire;12
+452;2;fauvette a tete noire;4
+490;2;fauvette a tete noire;10
+506;2;fauvette a tete noire;5
+524;2;fauvette a tete noire;13
+682;2;fauvette a tete noire;2
+689;2;fauvette a tete noire;11
+695;2;fauvette a tete noire;13
+702;2;fauvette a tete noire;8
+708;2;fauvette a tete noire;7
+771;2;fauvette a tete noire;10
+791;2;fauvette a tete noire;8
+30;1;fauvette des jardins;1
+58;1;fauvette des jardins;2
+242;1;fauvette des jardins;1
+260;1;fauvette des jardins;1
+385;1;fauvette des jardins;1
+452;1;fauvette des jardins;1
+490;1;fauvette des jardins;2
+524;1;fauvette des jardins;1
+682;1;fauvette des jardins;1
+771;1;fauvette des jardins;2
+166;2;fauvette des jardins;1
+199;2;fauvette des jardins;1
+354;2;fauvette des jardins;1
+385;2;fauvette des jardins;1
+443;2;fauvette des jardins;1
+490;2;fauvette des jardins;1
+524;2;fauvette des jardins;1
+682;2;fauvette des jardins;1
+689;2;fauvette des jardins;4
+771;2;fauvette des jardins;1
+791;2;fauvette des jardins;3
+16;1;fauvette grisette;1
+354;1;fauvette grisette;1
+143;2;fauvette grisette;3
+354;2;fauvette grisette;1
+702;2;fauvette grisette;1
+58;1;gallinule poule d eau;2
+434;1;gallinule poule d eau;2
+490;1;gallinule poule d eau;2
+354;2;gallinule poule d eau;2
+434;2;gallinule poule d eau;2
+25;1;geai des chenes;1
+30;1;geai des chenes;7
+53;1;geai des chenes;3
+58;1;geai des chenes;1
+63;1;geai des chenes;1
+143;1;geai des chenes;1
+166;1;geai des chenes;1
+168;1;geai des chenes;2
+182;1;geai des chenes;3
+213;1;geai des chenes;4
+242;1;geai des chenes;1
+260;1;geai des chenes;2
+385;1;geai des chenes;3
+434;1;geai des chenes;1
+443;1;geai des chenes;1
+452;1;geai des chenes;3
+490;1;geai des chenes;2
+506;1;geai des chenes;1
+524;1;geai des chenes;1
+689;1;geai des chenes;1
+695;1;geai des chenes;4
+702;1;geai des chenes;1
+771;1;geai des chenes;2
+791;1;geai des chenes;1
+1;2;geai des chenes;3
+166;2;geai des chenes;3
+168;2;geai des chenes;2
+199;2;geai des chenes;1
+242;2;geai des chenes;1
+260;2;geai des chenes;1
+271;2;geai des chenes;2
+354;2;geai des chenes;2
+385;2;geai des chenes;6
+434;2;geai des chenes;1
+452;2;geai des chenes;5
+506;2;geai des chenes;2
+524;2;geai des chenes;2
+682;2;geai des chenes;1
+695;2;geai des chenes;4
+702;2;geai des chenes;1
+771;2;geai des chenes;1
+354;1;GEAI DES CHENES;1
+199;2;gobemouche gris;1
+354;2;gobemouche gris;1
+695;2;gobemouche gris;1
+16;1;goeland argente;5
+166;1;goeland argente;16
+199;1;goeland argente;4
+213;1;goeland argente;1
+354;1;goeland argente;15
+385;1;goeland argente;1
+490;1;goeland argente;4
+506;1;goeland argente;1
+682;1;goeland argente;2
+689;1;goeland argente;2
+695;1;goeland argente;18
+702;1;goeland argente;4
+16;2;goeland argente;11
+199;2;goeland argente;3
+213;2;goeland argente;20
+271;2;goeland argente;1
+354;2;goeland argente;2
+434;2;goeland argente;1
+443;2;goeland argente;1
+490;2;goeland argente;16
+682;2;goeland argente;1
+689;2;goeland argente;3
+702;2;goeland argente;2
+771;2;goeland argente;10
+354;1;Goeland argente;1
+16;2;goeland brun;1
+143;2;goeland brun;2
+354;2;goeland brun;1
+434;2;goeland brun;1
+702;2;goeland brun;2
+354;2;goeland marin;1
+53;1;grand cormoran;10
+354;1;grand cormoran;1
+385;1;grand cormoran;3
+490;1;grand cormoran;1
+385;2;grand cormoran;2
+1;1;grimpereau des jardins;2
+25;1;grimpereau des jardins;3
+53;1;grimpereau des jardins;1
+58;1;grimpereau des jardins;2
+143;1;grimpereau des jardins;3
+166;1;grimpereau des jardins;2
+168;1;grimpereau des jardins;3
+182;1;grimpereau des jardins;5
+199;1;grimpereau des jardins;1
+213;1;grimpereau des jardins;2
+260;1;grimpereau des jardins;4
+271;1;grimpereau des jardins;6
+385;1;grimpereau des jardins;2
+434;1;grimpereau des jardins;1
+443;1;grimpereau des jardins;4
+452;1;grimpereau des jardins;1
+524;1;grimpereau des jardins;3
+689;1;grimpereau des jardins;4
+695;1;grimpereau des jardins;1
+702;1;grimpereau des jardins;1
+708;1;grimpereau des jardins;2
+771;1;grimpereau des jardins;5
+791;1;grimpereau des jardins;5
+16;2;grimpereau des jardins;1
+143;2;grimpereau des jardins;1
+166;2;grimpereau des jardins;3
+168;2;grimpereau des jardins;4
+182;2;grimpereau des jardins;4
+199;2;grimpereau des jardins;2
+242;2;grimpereau des jardins;3
+260;2;grimpereau des jardins;1
+271;2;grimpereau des jardins;3
+385;2;grimpereau des jardins;1
+434;2;grimpereau des jardins;1
+443;2;grimpereau des jardins;3
+452;2;grimpereau des jardins;1
+524;2;grimpereau des jardins;2
+682;2;grimpereau des jardins;4
+689;2;grimpereau des jardins;4
+695;2;grimpereau des jardins;2
+702;2;grimpereau des jardins;1
+708;2;grimpereau des jardins;4
+771;2;grimpereau des jardins;7
+791;2;grimpereau des jardins;2
+25;1;grive draine;2
+53;1;grive draine;1
+58;1;grive draine;2
+143;1;grive draine;3
+166;1;grive draine;6
+199;1;grive draine;1
+271;1;grive draine;1
+385;1;grive draine;1
+452;1;grive draine;2
+524;1;grive draine;1
+702;1;grive draine;1
+708;1;grive draine;6
+771;1;grive draine;1
+58;2;grive draine;1
+166;2;grive draine;1
+168;2;grive draine;2
+182;2;grive draine;1
+213;2;grive draine;1
+242;2;grive draine;5
+260;2;grive draine;2
+434;2;grive draine;1
+443;2;grive draine;1
+452;2;grive draine;1
+506;2;grive draine;5
+524;2;grive draine;4
+682;2;grive draine;3
+689;2;grive draine;1
+695;2;grive draine;1
+702;2;grive draine;6
+771;2;grive draine;2
+791;2;grive draine;1
+1;1;grive musicienne;1
+16;1;grive musicienne;1
+25;1;grive musicienne;3
+53;1;grive musicienne;14
+58;1;grive musicienne;3
+63;1;grive musicienne;6
+143;1;grive musicienne;5
+166;1;grive musicienne;9
+168;1;grive musicienne;3
+182;1;grive musicienne;4
+199;1;grive musicienne;4
+213;1;grive musicienne;4
+242;1;grive musicienne;8
+260;1;grive musicienne;1
+271;1;grive musicienne;3
+354;1;grive musicienne;2
+385;1;grive musicienne;4
+434;1;grive musicienne;8
+443;1;grive musicienne;1
+452;1;grive musicienne;4
+490;1;grive musicienne;6
+506;1;grive musicienne;9
+524;1;grive musicienne;5
+682;1;grive musicienne;5
+689;1;grive musicienne;1
+695;1;grive musicienne;6
+702;1;grive musicienne;1
+708;1;grive musicienne;4
+771;1;grive musicienne;9
+791;1;grive musicienne;2
+1;2;grive musicienne;8
+16;2;grive musicienne;12
+58;2;grive musicienne;5
+143;2;grive musicienne;8
+166;2;grive musicienne;6
+168;2;grive musicienne;5
+199;2;grive musicienne;4
+213;2;grive musicienne;2
+242;2;grive musicienne;5
+260;2;grive musicienne;1
+271;2;grive musicienne;6
+385;2;grive musicienne;4
+434;2;grive musicienne;7
+443;2;grive musicienne;1
+452;2;grive musicienne;6
+490;2;grive musicienne;1
+506;2;grive musicienne;5
+524;2;grive musicienne;10
+682;2;grive musicienne;3
+689;2;grive musicienne;1
+695;2;grive musicienne;1
+702;2;grive musicienne;8
+708;2;grive musicienne;5
+771;2;grive musicienne;12
+791;2;grive musicienne;4
+143;1;heron cendre;1
+434;1;heron cendre;1
+682;1;heron cendre;1
+695;1;heron cendre;1
+702;1;heron cendre;1
+16;2;heron cendre;1
+354;2;heron cendre;1
+434;2;heron cendre;2
+490;2;heron cendre;1
+506;2;heron cendre;1
+708;2;heron cendre;1
+213;1;heron gardeboeufs;3
+260;1;heron gardeboeufs;4
+271;1;heron gardeboeufs;5
+434;1;heron gardeboeufs;18
+490;1;heron gardeboeufs;7
+506;1;heron gardeboeufs;12
+682;1;heron gardeboeufs;7
+689;1;heron gardeboeufs;4
+434;2;heron gardeboeufs;11
+452;2;heron gardeboeufs;2
+524;2;heron gardeboeufs;16
+702;2;heron gardeboeufs;2
+58;2;hirondelle de fenetre;1
+1;1;hirondelle rustique;2
+16;1;hirondelle rustique;3
+25;1;hirondelle rustique;2
+30;1;hirondelle rustique;3
+58;1;hirondelle rustique;12
+63;1;hirondelle rustique;8
+143;1;hirondelle rustique;3
+166;1;hirondelle rustique;4
+199;1;hirondelle rustique;3
+213;1;hirondelle rustique;4
+242;1;hirondelle rustique;2
+260;1;hirondelle rustique;7
+271;1;hirondelle rustique;3
+354;1;hirondelle rustique;2
+434;1;hirondelle rustique;3
+443;1;hirondelle rustique;7
+490;1;hirondelle rustique;1
+506;1;hirondelle rustique;3
+524;1;hirondelle rustique;2
+682;1;hirondelle rustique;1
+689;1;hirondelle rustique;3
+695;1;hirondelle rustique;2
+702;1;hirondelle rustique;4
+708;1;hirondelle rustique;1
+791;1;hirondelle rustique;7
+16;2;hirondelle rustique;1
+58;2;hirondelle rustique;4
+166;2;hirondelle rustique;3
+168;2;hirondelle rustique;1
+199;2;hirondelle rustique;1
+213;2;hirondelle rustique;8
+242;2;hirondelle rustique;6
+260;2;hirondelle rustique;1
+271;2;hirondelle rustique;1
+354;2;hirondelle rustique;2
+385;2;hirondelle rustique;5
+434;2;hirondelle rustique;2
+443;2;hirondelle rustique;2
+452;2;hirondelle rustique;1
+506;2;hirondelle rustique;5
+682;2;hirondelle rustique;7
+695;2;hirondelle rustique;3
+354;2;huppe fasciee;1
+168;1;hypolais polyglotte;1
+213;1;hypolais polyglotte;1
+242;1;hypolais polyglotte;2
+682;1;hypolais polyglotte;1
+16;2;hypolais polyglotte;3
+143;2;hypolais polyglotte;2
+166;2;hypolais polyglotte;1
+168;2;hypolais polyglotte;2
+354;2;hypolais polyglotte;5
+385;2;hypolais polyglotte;1
+434;2;hypolais polyglotte;1
+490;2;hypolais polyglotte;5
+506;2;hypolais polyglotte;3
+682;2;hypolais polyglotte;3
+689;2;hypolais polyglotte;2
+695;2;hypolais polyglotte;1
+168;1;inconnu;2
+354;1;inconnu (tiou titi);3
+25;1;linotte melodieuse;1
+143;1;linotte melodieuse;4
+168;1;linotte melodieuse;1
+213;1;linotte melodieuse;2
+260;1;linotte melodieuse;1
+354;1;linotte melodieuse;2
+385;1;linotte melodieuse;1
+434;1;linotte melodieuse;1
+490;1;linotte melodieuse;5
+524;1;linotte melodieuse;1
+702;1;linotte melodieuse;1
+1;2;linotte melodieuse;1
+58;2;linotte melodieuse;1
+143;2;linotte melodieuse;4
+166;2;linotte melodieuse;1
+168;2;linotte melodieuse;3
+199;2;linotte melodieuse;4
+354;2;linotte melodieuse;7
+434;2;linotte melodieuse;1
+490;2;linotte melodieuse;6
+702;2;linotte melodieuse;3
+791;2;linotte melodieuse;1
+58;2;loriot d europe;1
+434;2;martin pecheur d europe;1
+168;2;martinet noir;6
+242;2;martinet noir;1
+354;2;martinet noir;111
+385;2;martinet noir;4
+434;2;martinet noir;2
+443;2;martinet noir;3
+452;2;martinet noir;1
+695;2;martinet noir;3
+1;1;merle noir;7
+16;1;merle noir;18
+25;1;merle noir;8
+30;1;merle noir;7
+53;1;merle noir;8
+58;1;merle noir;7
+63;1;merle noir;11
+143;1;merle noir;3
+166;1;merle noir;11
+168;1;merle noir;13
+182;1;merle noir;12
+199;1;merle noir;11
+213;1;merle noir;10
+242;1;merle noir;11
+260;1;merle noir;14
+271;1;merle noir;10
+354;1;merle noir;10
+385;1;merle noir;4
+434;1;merle noir;7
+443;1;merle noir;14
+452;1;merle noir;19
+490;1;merle noir;6
+506;1;merle noir;9
+524;1;merle noir;10
+682;1;merle noir;7
+689;1;merle noir;10
+695;1;merle noir;13
+702;1;merle noir;2
+708;1;merle noir;4
+771;1;merle noir;13
+791;1;merle noir;10
+1;2;merle noir;6
+16;2;merle noir;5
+58;2;merle noir;9
+143;2;merle noir;9
+166;2;merle noir;9
+168;2;merle noir;6
+182;2;merle noir;10
+199;2;merle noir;12
+213;2;merle noir;10
+242;2;merle noir;15
+260;2;merle noir;12
+271;2;merle noir;6
+354;2;merle noir;7
+385;2;merle noir;9
+434;2;merle noir;16
+443;2;merle noir;8
+452;2;merle noir;15
+490;2;merle noir;13
+506;2;merle noir;10
+524;2;merle noir;16
+682;2;merle noir;13
+689;2;merle noir;9
+695;2;merle noir;9
+702;2;merle noir;14
+708;2;merle noir;13
+771;2;merle noir;10
+791;2;merle noir;11
+30;1;mesange a longue queue;2
+166;1;mesange a longue queue;3
+199;1;mesange a longue queue;1
+260;1;mesange a longue queue;1
+443;1;mesange a longue queue;1
+689;1;mesange a longue queue;2
+702;1;mesange a longue queue;2
+791;1;mesange a longue queue;2
+182;2;mesange a longue queue;2
+199;2;mesange a longue queue;2
+213;2;mesange a longue queue;4
+260;2;mesange a longue queue;3
+434;2;mesange a longue queue;2
+702;2;mesange a longue queue;2
+1;1;mesange bleue;3
+16;1;mesange bleue;6
+25;1;mesange bleue;8
+30;1;mesange bleue;8
+53;1;mesange bleue;9
+58;1;mesange bleue;1
+63;1;mesange bleue;4
+143;1;mesange bleue;4
+166;1;mesange bleue;7
+168;1;mesange bleue;8
+182;1;mesange bleue;10
+199;1;mesange bleue;7
+213;1;mesange bleue;3
+242;1;mesange bleue;7
+260;1;mesange bleue;5
+271;1;mesange bleue;3
+354;1;mesange bleue;2
+385;1;mesange bleue;5
+434;1;mesange bleue;4
+443;1;mesange bleue;11
+452;1;mesange bleue;8
+490;1;mesange bleue;4
+506;1;mesange bleue;7
+524;1;mesange bleue;1
+682;1;mesange bleue;4
+689;1;mesange bleue;4
+695;1;mesange bleue;6
+702;1;mesange bleue;2
+708;1;mesange bleue;9
+771;1;mesange bleue;4
+791;1;mesange bleue;9
+1;2;mesange bleue;6
+16;2;mesange bleue;7
+58;2;mesange bleue;4
+143;2;mesange bleue;5
+166;2;mesange bleue;6
+168;2;mesange bleue;7
+182;2;mesange bleue;16
+199;2;mesange bleue;5
+213;2;mesange bleue;10
+242;2;mesange bleue;13
+260;2;mesange bleue;9
+271;2;mesange bleue;12
+354;2;mesange bleue;7
+385;2;mesange bleue;3
+434;2;mesange bleue;18
+443;2;mesange bleue;6
+452;2;mesange bleue;2
+490;2;mesange bleue;2
+506;2;mesange bleue;2
+524;2;mesange bleue;3
+682;2;mesange bleue;4
+689;2;mesange bleue;5
+695;2;mesange bleue;4
+702;2;mesange bleue;2
+708;2;mesange bleue;2
+771;2;mesange bleue;10
+791;2;mesange bleue;4
+1;1;mesange charbonniere;4
+16;1;mesange charbonniere;3
+25;1;mesange charbonniere;10
+30;1;mesange charbonniere;7
+53;1;mesange charbonniere;2
+58;1;mesange charbonniere;4
+143;1;mesange charbonniere;10
+166;1;mesange charbonniere;5
+168;1;mesange charbonniere;2
+182;1;mesange charbonniere;2
+199;1;mesange charbonniere;3
+213;1;mesange charbonniere;5
+242;1;mesange charbonniere;2
+260;1;mesange charbonniere;5
+271;1;mesange charbonniere;4
+354;1;mesange charbonniere;3
+385;1;mesange charbonniere;3
+434;1;mesange charbonniere;8
+443;1;mesange charbonniere;1
+452;1;mesange charbonniere;2
+490;1;mesange charbonniere;4
+524;1;mesange charbonniere;4
+682;1;mesange charbonniere;2
+689;1;mesange charbonniere;4
+695;1;mesange charbonniere;2
+702;1;mesange charbonniere;2
+708;1;mesange charbonniere;1
+771;1;mesange charbonniere;3
+791;1;mesange charbonniere;4
+1;2;mesange charbonniere;1
+16;2;mesange charbonniere;1
+58;2;mesange charbonniere;3
+168;2;mesange charbonniere;3
+182;2;mesange charbonniere;1
+213;2;mesange charbonniere;2
+242;2;mesange charbonniere;1
+260;2;mesange charbonniere;3
+385;2;mesange charbonniere;4
+434;2;mesange charbonniere;2
+443;2;mesange charbonniere;4
+452;2;mesange charbonniere;23
+490;2;mesange charbonniere;1
+506;2;mesange charbonniere;16
+524;2;mesange charbonniere;1
+682;2;mesange charbonniere;2
+695;2;mesange charbonniere;5
+702;2;mesange charbonniere;1
+708;2;mesange charbonniere;3
+791;2;mesange charbonniere;1
+58;1;mesange nonnette;1
+182;1;mesange nonnette;3
+271;2;mesange nonnette;3
+30;1;moineau domestique;4
+58;1;moineau domestique;3
+63;1;moineau domestique;6
+199;1;moineau domestique;1
+260;1;moineau domestique;2
+385;1;moineau domestique;14
+434;1;moineau domestique;7
+506;1;moineau domestique;6
+689;1;moineau domestique;3
+702;1;moineau domestique;2
+16;2;moineau domestique;3
+58;2;moineau domestique;21
+166;2;moineau domestique;5
+168;2;moineau domestique;3
+182;2;moineau domestique;2
+242;2;moineau domestique;1
+260;2;moineau domestique;3
+385;2;moineau domestique;11
+434;2;moineau domestique;2
+506;2;moineau domestique;3
+682;2;moineau domestique;1
+354;1;mouette rieuse;2
+354;2;mouette rieuse;1
+354;1;oie domestique;4
+385;1;perdrix grise;1
+213;2;perdrix sp;1
+1;1;pic epeiche;3
+16;1;pic epeiche;1
+30;1;pic epeiche;1
+53;1;pic epeiche;1
+63;1;pic epeiche;1
+143;1;pic epeiche;2
+166;1;pic epeiche;1
+182;1;pic epeiche;2
+213;1;pic epeiche;2
+271;1;pic epeiche;1
+434;1;pic epeiche;2
+443;1;pic epeiche;5
+682;1;pic epeiche;1
+695;1;pic epeiche;1
+771;1;pic epeiche;1
+791;1;pic epeiche;1
+1;2;pic epeiche;4
+58;2;pic epeiche;1
+166;2;pic epeiche;3
+168;2;pic epeiche;1
+182;2;pic epeiche;1
+260;2;pic epeiche;1
+271;2;pic epeiche;2
+385;2;pic epeiche;1
+434;2;pic epeiche;1
+443;2;pic epeiche;1
+490;2;pic epeiche;3
+506;2;pic epeiche;3
+689;2;pic epeiche;1
+695;2;pic epeiche;2
+708;2;pic epeiche;3
+771;2;pic epeiche;6
+791;2;pic epeiche;4
+434;1;pic epeichette;1
+524;2;pic epeichette;1
+168;2;pic mar;1
+506;2;pic mar;1
+166;2;pic noir;1
+524;2;pic noir;3
+63;1;pic vert;1
+143;1;pic vert;1
+168;1;pic vert;2
+199;1;pic vert;1
+260;1;pic vert;3
+385;1;pic vert;5
+490;1;pic vert;6
+524;1;pic vert;2
+695;1;pic vert;2
+708;1;pic vert;1
+771;1;pic vert;1
+791;1;pic vert;3
+1;2;pic vert;4
+16;2;pic vert;1
+58;2;pic vert;1
+143;2;pic vert;2
+166;2;pic vert;1
+168;2;pic vert;3
+182;2;pic vert;1
+199;2;pic vert;1
+242;2;pic vert;2
+271;2;pic vert;1
+385;2;pic vert;2
+434;2;pic vert;1
+452;2;pic vert;2
+490;2;pic vert;4
+524;2;pic vert;2
+689;2;pic vert;1
+702;2;pic vert;6
+791;2;pic vert;2
+1;1;pie bavarde;5
+16;1;pie bavarde;1
+25;1;pie bavarde;4
+30;1;pie bavarde;4
+53;1;pie bavarde;1
+63;1;pie bavarde;4
+143;1;pie bavarde;2
+182;1;pie bavarde;2
+213;1;pie bavarde;2
+242;1;pie bavarde;4
+452;1;pie bavarde;1
+506;1;pie bavarde;1
+689;1;pie bavarde;2
+708;1;pie bavarde;1
+1;2;pie bavarde;5
+16;2;pie bavarde;4
+58;2;pie bavarde;2
+143;2;pie bavarde;6
+168;2;pie bavarde;3
+182;2;pie bavarde;4
+199;2;pie bavarde;4
+213;2;pie bavarde;1
+242;2;pie bavarde;3
+260;2;pie bavarde;7
+271;2;pie bavarde;5
+354;2;pie bavarde;3
+434;2;pie bavarde;1
+443;2;pie bavarde;2
+506;2;pie bavarde;1
+682;2;pie bavarde;1
+689;2;pie bavarde;4
+702;2;pie bavarde;5
+16;1;pigeon biset feral;1
+53;1;pigeon biset feral;34
+63;1;pigeon biset feral;11
+166;1;pigeon biset feral;4
+199;1;pigeon biset feral;2
+242;1;pigeon biset feral;2
+260;1;pigeon biset feral;2
+682;1;pigeon biset feral;2
+702;1;pigeon biset feral;1
+16;2;pigeon biset feral;2
+58;2;pigeon biset feral;3
+199;2;pigeon biset feral;1
+213;2;pigeon biset feral;9
+260;2;pigeon biset feral;3
+271;2;pigeon biset feral;22
+443;2;pigeon biset feral;8
+702;2;pigeon biset feral;5
+771;2;pigeon biset feral;2
+53;1;pigeon Biset feral;2
+791;1;pigeon colombin;1
+168;2;pigeon colombin;1
+354;2;pigeon colombin;1
+791;2;pigeon colombin;1
+1;1;pigeon ramier;19
+16;1;pigeon ramier;18
+25;1;pigeon ramier;18
+30;1;pigeon ramier;9
+53;1;pigeon ramier;12
+58;1;pigeon ramier;11
+63;1;pigeon ramier;8
+143;1;pigeon ramier;6
+166;1;pigeon ramier;11
+168;1;pigeon ramier;9
+182;1;pigeon ramier;9
+199;1;pigeon ramier;13
+213;1;pigeon ramier;14
+242;1;pigeon ramier;11
+260;1;pigeon ramier;17
+271;1;pigeon ramier;12
+354;1;pigeon ramier;8
+385;1;pigeon ramier;10
+434;1;pigeon ramier;22
+443;1;pigeon ramier;17
+452;1;pigeon ramier;23
+490;1;pigeon ramier;19
+506;1;pigeon ramier;19
+524;1;pigeon ramier;17
+682;1;pigeon ramier;10
+689;1;pigeon ramier;25
+695;1;pigeon ramier;23
+702;1;pigeon ramier;5
+708;1;pigeon ramier;16
+771;1;pigeon ramier;24
+791;1;pigeon ramier;18
+1;2;pigeon ramier;19
+16;2;pigeon ramier;14
+58;2;pigeon ramier;11
+143;2;pigeon ramier;10
+166;2;pigeon ramier;21
+168;2;pigeon ramier;5
+182;2;pigeon ramier;13
+199;2;pigeon ramier;19
+213;2;pigeon ramier;13
+242;2;pigeon ramier;17
+260;2;pigeon ramier;19
+271;2;pigeon ramier;20
+354;2;pigeon ramier;12
+385;2;pigeon ramier;10
+434;2;pigeon ramier;12
+443;2;pigeon ramier;6
+452;2;pigeon ramier;21
+490;2;pigeon ramier;15
+506;2;pigeon ramier;18
+524;2;pigeon ramier;27
+682;2;pigeon ramier;20
+689;2;pigeon ramier;25
+695;2;pigeon ramier;17
+702;2;pigeon ramier;25
+708;2;pigeon ramier;18
+771;2;pigeon ramier;12
+791;2;pigeon ramier;18
+695;1;pigeon ramier;2
+1;1;pinson des arbres;15
+16;1;pinson des arbres;11
+25;1;pinson des arbres;15
+30;1;pinson des arbres;18
+53;1;pinson des arbres;2
+58;1;pinson des arbres;19
+63;1;pinson des arbres;9
+143;1;pinson des arbres;17
+166;1;pinson des arbres;15
+168;1;pinson des arbres;12
+182;1;pinson des arbres;12
+199;1;pinson des arbres;15
+213;1;pinson des arbres;15
+242;1;pinson des arbres;16
+260;1;pinson des arbres;18
+271;1;pinson des arbres;19
+354;1;pinson des arbres;11
+385;1;pinson des arbres;7
+434;1;pinson des arbres;14
+443;1;pinson des arbres;13
+452;1;pinson des arbres;10
+490;1;pinson des arbres;11
+506;1;pinson des arbres;12
+524;1;pinson des arbres;19
+682;1;pinson des arbres;8
+689;1;pinson des arbres;7
+695;1;pinson des arbres;9
+702;1;pinson des arbres;7
+708;1;pinson des arbres;8
+771;1;pinson des arbres;21
+791;1;pinson des arbres;10
+1;2;pinson des arbres;10
+16;2;pinson des arbres;9
+58;2;pinson des arbres;15
+143;2;pinson des arbres;18
+166;2;pinson des arbres;12
+168;2;pinson des arbres;12
+182;2;pinson des arbres;16
+199;2;pinson des arbres;6
+213;2;pinson des arbres;16
+242;2;pinson des arbres;13
+260;2;pinson des arbres;10
+271;2;pinson des arbres;14
+354;2;pinson des arbres;4
+385;2;pinson des arbres;18
+434;2;pinson des arbres;8
+443;2;pinson des arbres;14
+452;2;pinson des arbres;20
+490;2;pinson des arbres;13
+506;2;pinson des arbres;20
+524;2;pinson des arbres;12
+682;2;pinson des arbres;19
+689;2;pinson des arbres;21
+695;2;pinson des arbres;13
+702;2;pinson des arbres;15
+708;2;pinson des arbres;21
+771;2;pinson des arbres;10
+791;2;pinson des arbres;17
+143;1;pipit des arbres;1
+354;2;pipit des arbres;1
+354;1;pipit farlouse;3
+452;1;pipit farlouse;1
+354;2;pipit farlouse;4
+58;1;pouillot fitis;1
+354;1;pouillot fitis;1
+1;1;pouillot veloce;9
+16;1;pouillot veloce;8
+25;1;pouillot veloce;7
+30;1;pouillot veloce;7
+53;1;pouillot veloce;7
+58;1;pouillot veloce;6
+63;1;pouillot veloce;6
+143;1;pouillot veloce;11
+166;1;pouillot veloce;7
+168;1;pouillot veloce;9
+182;1;pouillot veloce;9
+199;1;pouillot veloce;6
+213;1;pouillot veloce;14
+242;1;pouillot veloce;8
+260;1;pouillot veloce;10
+271;1;pouillot veloce;7
+354;1;pouillot veloce;5
+385;1;pouillot veloce;4
+434;1;pouillot veloce;9
+443;1;pouillot veloce;7
+452;1;pouillot veloce;11
+490;1;pouillot veloce;7
+506;1;pouillot veloce;8
+524;1;pouillot veloce;11
+682;1;pouillot veloce;9
+689;1;pouillot veloce;6
+695;1;pouillot veloce;8
+702;1;pouillot veloce;5
+708;1;pouillot veloce;5
+771;1;pouillot veloce;9
+791;1;pouillot veloce;8
+1;2;pouillot veloce;8
+16;2;pouillot veloce;7
+58;2;pouillot veloce;5
+143;2;pouillot veloce;4
+166;2;pouillot veloce;5
+168;2;pouillot veloce;12
+182;2;pouillot veloce;12
+199;2;pouillot veloce;3
+213;2;pouillot veloce;6
+242;2;pouillot veloce;10
+260;2;pouillot veloce;7
+271;2;pouillot veloce;8
+354;2;pouillot veloce;3
+385;2;pouillot veloce;4
+434;2;pouillot veloce;6
+443;2;pouillot veloce;7
+452;2;pouillot veloce;11
+490;2;pouillot veloce;8
+506;2;pouillot veloce;8
+524;2;pouillot veloce;7
+682;2;pouillot veloce;4
+689;2;pouillot veloce;9
+695;2;pouillot veloce;11
+702;2;pouillot veloce;4
+708;2;pouillot veloce;11
+771;2;pouillot veloce;7
+791;2;pouillot veloce;7
+58;1;Pouillot veloce;1
+166;1;roitelet a triple bandeau;2
+168;1;roitelet a triple bandeau;1
+434;1;roitelet a triple bandeau;1
+524;1;roitelet a triple bandeau;2
+689;1;roitelet a triple bandeau;1
+708;1;roitelet a triple bandeau;1
+771;1;roitelet a triple bandeau;2
+791;1;roitelet a triple bandeau;2
+16;2;roitelet a triple bandeau;2
+166;2;roitelet a triple bandeau;3
+168;2;roitelet a triple bandeau;1
+213;2;roitelet a triple bandeau;1
+271;2;roitelet a triple bandeau;1
+434;2;roitelet a triple bandeau;1
+524;2;roitelet a triple bandeau;2
+708;2;roitelet a triple bandeau;1
+771;2;roitelet a triple bandeau;4
+791;2;roitelet a triple bandeau;1
+53;1;roitelet huppe;2
+1;1;rougegorge familier;11
+16;1;rougegorge familier;13
+25;1;rougegorge familier;7
+30;1;rougegorge familier;6
+53;1;rougegorge familier;6
+58;1;rougegorge familier;5
+63;1;rougegorge familier;2
+143;1;rougegorge familier;8
+166;1;rougegorge familier;7
+168;1;rougegorge familier;10
+182;1;rougegorge familier;9
+199;1;rougegorge familier;4
+213;1;rougegorge familier;3
+242;1;rougegorge familier;6
+260;1;rougegorge familier;6
+271;1;rougegorge familier;7
+354;1;rougegorge familier;3
+385;1;rougegorge familier;3
+434;1;rougegorge familier;2
+443;1;rougegorge familier;11
+452;1;rougegorge familier;8
+490;1;rougegorge familier;7
+524;1;rougegorge familier;12
+682;1;rougegorge familier;4
+689;1;rougegorge familier;11
+695;1;rougegorge familier;11
+702;1;rougegorge familier;6
+708;1;rougegorge familier;4
+771;1;rougegorge familier;7
+791;1;rougegorge familier;7
+1;2;rougegorge familier;6
+16;2;rougegorge familier;3
+58;2;rougegorge familier;7
+143;2;rougegorge familier;5
+166;2;rougegorge familier;7
+168;2;rougegorge familier;7
+182;2;rougegorge familier;8
+199;2;rougegorge familier;1
+213;2;rougegorge familier;4
+242;2;rougegorge familier;5
+260;2;rougegorge familier;4
+271;2;rougegorge familier;8
+354;2;rougegorge familier;4
+385;2;rougegorge familier;6
+434;2;rougegorge familier;7
+443;2;rougegorge familier;4
+452;2;rougegorge familier;5
+490;2;rougegorge familier;5
+506;2;rougegorge familier;4
+524;2;rougegorge familier;12
+682;2;rougegorge familier;4
+689;2;rougegorge familier;7
+695;2;rougegorge familier;10
+702;2;rougegorge familier;5
+708;2;rougegorge familier;6
+771;2;rougegorge familier;8
+791;2;rougegorge familier;4
+260;1;rougequeue a front blanc;2
+771;1;rougequeue a front blanc;2
+166;2;rougequeue a front blanc;2
+682;2;rougequeue a front blanc;1
+695;2;rougequeue a front blanc;2
+143;1;rougequeue noir;2
+260;1;rougequeue noir;1
+702;1;rougequeue noir;1
+166;2;rougequeue noir;1
+53;1;serin cini;1
+695;1;serin cini;1
+25;1;sittelle torchepot;1
+166;1;sittelle torchepot;3
+213;1;sittelle torchepot;1
+260;1;sittelle torchepot;1
+490;1;sittelle torchepot;1
+524;1;sittelle torchepot;1
+771;1;sittelle torchepot;2
+166;2;sittelle torchepot;2
+168;2;sittelle torchepot;1
+182;2;sittelle torchepot;1
+260;2;sittelle torchepot;2
+524;2;sittelle torchepot;1
+771;2;sittelle torchepot;1
+791;2;sittelle torchepot;1
+354;1;tadorne de belon;35
+354;2;tadorne de Belon;16
+443;2;tadorne de Belon;3
+16;1;tarier patre;1
+25;1;tarier patre;1
+58;1;tarier patre;1
+143;1;tarier patre;3
+168;1;tarier patre;1
+182;1;tarier patre;2
+271;1;tarier patre;1
+354;1;tarier patre;3
+434;1;tarier patre;2
+490;1;tarier patre;3
+506;1;tarier patre;2
+524;1;tarier patre;1
+689;1;tarier patre;1
+702;1;tarier patre;3
+708;1;tarier patre;1
+771;1;tarier patre;1
+58;2;tarier patre;2
+143;2;tarier patre;1
+166;2;tarier patre;1
+199;2;tarier patre;1
+213;2;tarier patre;2
+260;2;tarier patre;3
+354;2;tarier patre;3
+385;2;tarier patre;2
+434;2;tarier patre;3
+443;2;tarier patre;1
+524;2;tarier patre;1
+682;2;tarier patre;2
+689;2;tarier patre;3
+695;2;tarier patre;1
+708;2;tarier patre;1
+771;2;tarier patre;1
+213;1;tourterelle des bois;3
+354;1;tourterelle des bois;1
+434;1;tourterelle des bois;2
+524;1;tourterelle des bois;4
+199;2;tourterelle des bois;1
+213;2;tourterelle des bois;1
+354;2;tourterelle des bois;2
+385;2;tourterelle des bois;5
+434;2;tourterelle des bois;2
+452;2;tourterelle des bois;2
+506;2;tourterelle des bois;2
+25;1;tourterelle turque;2
+58;1;tourterelle turque;1
+166;1;tourterelle turque;1
+168;1;tourterelle turque;4
+213;1;tourterelle turque;3
+260;1;tourterelle turque;2
+271;1;tourterelle turque;3
+354;1;tourterelle turque;1
+434;1;tourterelle turque;1
+443;1;tourterelle turque;1
+524;1;tourterelle turque;3
+689;1;tourterelle turque;1
+702;1;tourterelle turque;1
+771;1;tourterelle turque;1
+1;2;tourterelle turque;2
+58;2;tourterelle turque;1
+166;2;tourterelle turque;5
+168;2;tourterelle turque;2
+182;2;tourterelle turque;1
+199;2;tourterelle turque;3
+213;2;tourterelle turque;1
+260;2;tourterelle turque;2
+506;2;tourterelle turque;1
+682;2;tourterelle turque;2
+689;2;tourterelle turque;3
+695;2;tourterelle turque;1
+708;2;tourterelle turque;4
+1;1;troglodyte mignon;8
+16;1;troglodyte mignon;8
+25;1;troglodyte mignon;9
+30;1;troglodyte mignon;9
+53;1;troglodyte mignon;11
+58;1;troglodyte mignon;9
+63;1;troglodyte mignon;3
+143;1;troglodyte mignon;5
+166;1;troglodyte mignon;11
+168;1;troglodyte mignon;8
+182;1;troglodyte mignon;4
+199;1;troglodyte mignon;6
+213;1;troglodyte mignon;5
+242;1;troglodyte mignon;10
+260;1;troglodyte mignon;6
+271;1;troglodyte mignon;9
+354;1;troglodyte mignon;5
+385;1;troglodyte mignon;5
+434;1;troglodyte mignon;10
+443;1;troglodyte mignon;8
+452;1;troglodyte mignon;4
+490;1;troglodyte mignon;5
+506;1;troglodyte mignon;6
+524;1;troglodyte mignon;9
+682;1;troglodyte mignon;7
+689;1;troglodyte mignon;10
+695;1;troglodyte mignon;7
+702;1;troglodyte mignon;1
+708;1;troglodyte mignon;2
+771;1;troglodyte mignon;6
+791;1;troglodyte mignon;5
+1;2;troglodyte mignon;8
+16;2;troglodyte mignon;9
+58;2;troglodyte mignon;6
+143;2;troglodyte mignon;2
+166;2;troglodyte mignon;6
+168;2;troglodyte mignon;5
+182;2;troglodyte mignon;10
+199;2;troglodyte mignon;7
+213;2;troglodyte mignon;5
+242;2;troglodyte mignon;9
+260;2;troglodyte mignon;8
+271;2;troglodyte mignon;6
+354;2;troglodyte mignon;3
+385;2;troglodyte mignon;4
+434;2;troglodyte mignon;9
+443;2;troglodyte mignon;4
+452;2;troglodyte mignon;4
+490;2;troglodyte mignon;10
+506;2;troglodyte mignon;10
+524;2;troglodyte mignon;9
+682;2;troglodyte mignon;3
+689;2;troglodyte mignon;9
+695;2;troglodyte mignon;10
+702;2;troglodyte mignon;7
+708;2;troglodyte mignon;7
+771;2;troglodyte mignon;10
+791;2;troglodyte mignon;8
+354;1;vanneau huppe;4
+25;1;verdier d europe;3
+30;1;verdier d europe;6
+58;1;verdier d europe;2
+166;1;verdier d europe;3
+199;1;verdier d europe;1
+213;1;verdier d europe;3
+260;1;verdier d europe;1
+354;1;verdier d europe;2
+682;1;verdier d europe;1
+16;2;verdier d europe;1
+58;2;verdier d europe;5
+143;2;verdier d europe;1
+166;2;verdier d europe;3
+168;2;verdier d europe;8
+385;2;verdier d europe;3
+443;2;verdier d europe;4
+452;2;verdier d europe;1
+506;2;verdier d europe;2
+682;2;verdier d europe;5
+689;2;verdier d europe;7
+695;2;verdier d europe;2
+791;2;verdier d europe;1

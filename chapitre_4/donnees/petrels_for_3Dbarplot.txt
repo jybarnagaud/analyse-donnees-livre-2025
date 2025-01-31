@@ -1,0 +1,4 @@
+"names.resume.petrel."	"resume.petrel"
+"Prion antarctique"	10
+"vide"	9
+"Pétrel bleu"	7
