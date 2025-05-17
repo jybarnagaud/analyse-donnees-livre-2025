@@ -1,0 +1,427 @@
+---
+title: "Annexe 2"
+author: "Jean-Yves Barnagaud & Olivier Gimenez"
+date: 'juin 2023'
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,comment='>',tidy=F, class.source='bg-warning', class.output='bg-success')
+knitr::opts_knit$set(root.dir = 'A:/projets/projet_stats/dossier_editeur/Barnagaud_Gimenez_version_07_2023/annexes')
+```
+
+ATTENTION : MODIFIER LE CHEMIN D'ACCES VERS VOTRE REPERTOIRE COURANT AVANT DE LANCER CE SCRIPT
+
+
+# packages utiles et options du script
+
+## packages
+
+```{r}
+# génériques
+library(tidyverse) 
+library(formatR)
+library(patchwork) 
+library(viridis)
+library(lmtest)
+```
+
+## répertoire courant 
+
+Attention : le répertoire de travail est changé dans l'en-tête du script Markdown.
+
+```{r, eval = F}
+setwd('A:/Biotope_analyse_donnees/annexes')
+```
+
+## options graphiques
+
+Thème par défaut des graphiques
+
+```{r}
+theme_set(theme_light(base_size = 16))
+```
+
+Attention : les figures sont exportées dans des chunks de code à part qui sont invisibles dans le document généré par ce script et non exécutés. Pour exécuter ces chunks de code, aller dans le script Markdown et passer ces chunks de code en *eval = T*. 
+
+## Reproductibilité des simulations
+
+```{r}
+set.seed(2020) 
+```
+
+# Comment s’en sortir?
+
+Les données
+
+```{r}
+bufo <- read.csv2("donnees/pheno_bufobufo.csv",dec=".")
+```
+
+La régression du chapitre 7
+
+```{r}
+mod.bufo <- lm(date_resc ~ TmaxFev.Mars, data = bufo)
+summary(mod.bufo)
+```
+
+les paramètres à conserver : 
+
+```{r}
+pente <- -6 
+ordonnee_origine <- 140 
+sd_residuelle <- 10 
+```
+
+L'effectif : 
+
+```{r}
+taille_echantillon <- 10 
+```
+
+On simule des températures dans une gamme plausible, en l'occurrence entre le minimum et le maximum observés dans les données sur le crapaud commun : 
+
+```{r}
+variable_explicative <- seq(min(bufo$TmaxFev.Mars),
+                            max(bufo$TmaxFev.Mars),
+                            length = taille_echantillon)
+variable_explicative
+```
+
+On simule la variable de réponse : 
+
+```{r}
+moyenne_reponse <- ordonnee_origine + pente * variable_explicative 
+```
+
+On ajoute la variabilité : 
+
+```{r}
+variable_reponse <- moyenne_reponse + rnorm(n = taille_echantillon, 
+                          mean = 0, 
+                          sd = sd_residuelle)
+variable_reponse
+```
+
+On essaie maintenant de retrouver les paramètres :
+
+```{r}
+reg <- lm(variable_reponse ~ variable_explicative) 
+summary(reg)
+```
+
+On extrait la p-value : 
+
+```{r}
+p_value <- coef(summary(reg))["variable_explicative", "Pr(>|t|)"]
+
+p_value
+```
+
+## Déterminer la taille d’échantillon nécessaire
+
+Nombre de simulations : 
+
+```{r}
+nombre_simulations <- 400
+```
+
+On fait varier la taille d'échantillon de 10 à 100, par pas de 5
+
+```{r}
+taille_echantillon <- seq(5, 100, by = 5) 
+```
+
+on prépare un vecteur pour stocker les p-values : 
+
+```{r}
+p_value <- rep(NA, nombre_simulations)
+```
+
+et pour stocker l'indicateur de puissance : 
+
+```{r}
+puissance <- rep(NA, length(taille_echantillon))
+```
+
+La simulation : on boucle sur les tailles d'échantillon qu'on veut tester, et pour chaque taille d'échantillon on fait 400 tirages.
+
+```{r}
+# première boucle : on répète toutes les commandes sur toutes les tailles d'échantillon
+
+for (j in 1:length(taille_echantillon)) {
+  
+  variable_explicative <- seq(min(bufo$TmaxFev.Mars),
+                              max(bufo$TmaxFev.Mars),
+                              length = taille_echantillon[j])
+
+# deuxième boucle, imbriquée dans la précédente : on répète 400 fois la simulation 
+  
+  for (i in 1:nombre_simulations) {
+  
+      moyenne_reponse <- ordonnee_origine + pente * variable_explicative
+    
+      variable_reponse <- rnorm(taille_echantillon[j],
+                              mean = moyenne_reponse,
+                              sd = sd_residuelle)
+    
+      reg <- lm(variable_reponse ~ variable_explicative)
+    
+    p_value[i] <-
+      coef(summary(reg))["variable_explicative", "Pr(>|t|)"]
+    
+  }
+  
+  puissance[j] <- sum(p_value < 0.05) / nombre_simulations
+}
+
+# stocker les tailles d'échantillons et les puissances dans un tableau
+
+df <- data.frame(taille_echantillon, puissance)
+```
+
+Résultats : 
+
+```{r}
+round(df, 2)
+```
+
+# La relation taille d’échantillon – puissance pour un effet faible
+
+La simulation : on garde tous les paramètres identiques à la simulation précédente, sauf la pente
+
+```{r}
+pente <- -1
+ordonnee_origine <- 140
+sd_residuelle <- 10
+
+nombre_simulations <- 400
+
+taille_echantillon <- seq(10, 500, by = 10)
+
+p_valeur <- rep(NA, nombre_simulations)
+puissance <- rep(NA, length(taille_echantillon))
+
+for (j in 1:length(taille_echantillon)) {
+  variable_explicative <- seq(min(bufo$TmaxFev.Mars),
+                              max(bufo$TmaxFev.Mars),
+                              length = taille_echantillon[j])
+  
+  for (i in 1:nombre_simulations) {
+    moyenne_reponse <- ordonnee_origine + pente * variable_explicative
+    
+    variable_reponse <- rnorm(taille_echantillon[j],
+                              mean = moyenne_reponse,
+                              sd = sd_residuelle)
+    
+    reg <- lm(variable_reponse ~ variable_explicative)
+    
+    p_valeur[i] <-
+      coef(summary(reg))["variable_explicative", "Pr(>|t|)"]
+  }
+  puissance[j] <- sum(p_valeur < 0.05) / nombre_simulations
+} 
+```
+
+Résultat : 
+
+
+```{r echo=FALSE}
+data.frame(x = taille_echantillon, y = puissance) %>%
+  ggplot(aes(x = x, y = y)) +
+  geom_line(linewidth = 1) +
+  geom_hline(yintercept = 0.8,
+             color = "#3b528b",
+             lty = 2) +
+  labs(x = "taille d'échantillon", y = "puissance")+
+  theme_classic()
+
+ggsave("outputs/A2F1.png",width=5,height=5)
+```
+
+# Autres paramètres à étudier
+
+```{r}
+pente <- c(-5, -1, -0.5, 0.5, 1, 5)
+ordonnee_origine <- 140
+sd_residuelle <- 10
+
+nombre_simulations <- 400
+
+taille_echantillon <- seq(10, 500, by = 10)
+
+p_valeur <- rep(NA, nombre_simulations)
+puissance0 <- rep(NA, length(taille_echantillon))
+puissance <-
+  matrix(NA, nrow = length(puissance0), ncol = length(pente))
+
+for (k in 1:length(pente)) {
+  for (j in 1:length(taille_echantillon)) {
+    variable_explicative <- seq(min(bufo$TmaxFev.Mars),
+                                max(bufo$TmaxFev.Mars),
+                                length = taille_echantillon[j])
+    
+    for (i in 1:nombre_simulations) {
+      moyenne_reponse <-
+        ordonnee_origine + pente[k] * variable_explicative
+      
+      variable_reponse <- rnorm(taille_echantillon[j],
+                                mean = moyenne_reponse,
+                                sd = sd_residuelle)
+      
+      reg <- lm(variable_reponse ~ variable_explicative)
+      
+      p_valeur[i] <-
+        coef(summary(reg))["variable_explicative", "Pr(>|t|)"]
+    }
+    puissance0[j] <- sum(p_valeur < 0.05) / nombre_simulations
+  }
+  puissance[, k] <- puissance0
+}
+
+df.k <- as.data.frame(puissance)
+colnames(df.k) <- paste("pente =", pente, sep = " ")
+df.k.w <- as.data.frame(pivot_longer(df.k, cols = 1:length(pente)))
+df.k.w$sample.size <- rep(taille_echantillon, each = length(pente))
+
+ggplot(df.k.w) +
+  aes(x = sample.size, y = value, col = name) +
+  geom_line(linewidth = 1) +
+  geom_hline(yintercept = 0.8,
+             color = "#3b528b",
+             lty = 2) +
+  labs(x = "taille d'échantillon", y = "puissance",col="pente") +
+  theme_classic()+
+  scale_color_viridis_d()
+  
+ggsave("outputs/A2F2.png", width = 8, height = 5)
+
+```
+
+# Test de puissance pour un GLM
+
+```{r}
+lomolino <- read.csv2("donnees/lomolino.csv", dec = ".")
+lomolino$log.surface <- log(lomolino$surface)
+```
+
+Le GLM du chapitre 8 : 
+
+```{r}
+m1 <- glm(n_especes ~ log.surface + distance_source + latitude,
+          family = "poisson",
+          data = lomolino)
+```
+
+```{r}
+m2 <- glm(n_especes ~ log.surface,
+          family = "poisson",
+          data = lomolino)
+```
+
+```{r}
+lrtest(m1, m2)
+```
+
+Pour l'analyse de puissance, on reprend les paramètres du m1 : 
+
+```{r}
+ordonnee_origine <- 1 
+pente_surf <- 0.2 
+pente_dsour <- -0.005 
+pente_lati <- 0.005 
+```
+
+On tente une dizaine de tailles d'échantillons : 
+
+```{r}
+taille_echantillon <- seq(5, 50, by = 5)
+nombre_simulations <- 400
+```
+
+Les variables explicatives : 
+
+```{r}
+
+# stockage des valeurs d'intérêt
+
+p_value <- rep(NA, nombre_simulations)
+puissance <- rep(NA, length(taille_echantillon))
+
+# variables explicatives
+
+for (j in 1:length(taille_echantillon)) {
+  var_surf <- runif(
+    min = min(lomolino$surface),
+    max = max(lomolino$surface),
+    n = taille_echantillon[j]
+  )
+  log.var_surf <- log(var_surf)
+  
+  var_dsour <- runif(
+    min = min(lomolino$distance_source),
+    max = max(lomolino$distance_source),
+    n = taille_echantillon[j]
+  )
+  
+  var_lati <- runif(
+    min = min(lomolino$latitude),
+    max = max(lomolino$latitude),
+    n = taille_echantillon[j]
+  )
+  
+  # variable de réponse
+  
+  for (i in 1:nombre_simulations) {
+    log_lambda <- ordonnee_origine +
+      pente_surf * log.var_surf +
+      pente_dsour * var_dsour +
+      pente_lati * var_lati
+    
+    
+    variable_reponse <- rpois(n = taille_echantillon[j],
+                              lambda = exp(log_lambda))
+    
+    # hypothèse 1
+    
+    glm1 <-
+      glm(variable_reponse ~ var_surf + var_dsour + var_lati, family = "poisson")
+    
+    # hypothèse 2
+    
+    glm2 <- glm(variable_reponse ~ var_surf, family = "poisson")
+    
+    # ratio de vraisemblances
+    
+    test <- lrtest(glm1, glm2)
+    p_value[i] <- test$`Pr(>Chisq)`[2]
+    
+  }
+  
+  puissance[j] <- sum(p_value < 0.05) / nombre_simulations
+  
+}
+```
+
+La relation effectif - puissance : 
+
+```{r}
+
+df.glm <- data.frame(taille_echantillon,puissance)
+
+ggplot(df.glm) +
+  aes(x = taille_echantillon, y = puissance) +
+  geom_line(linewidth = 1) +
+  geom_hline(yintercept = 0.8,
+             color = "#3b528b",
+             lty = 2) +
+  labs(x = "taille d'échantillon", y = "puissance") +
+  theme_classic()+
+  scale_color_viridis_d()
+  
+ggsave("outputs/A2F3.png", width = 6, height = 6)
+```
+
+
+
+
