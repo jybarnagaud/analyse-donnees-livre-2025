@@ -61,6 +61,11 @@ theme_set(theme_light(base_size = 16))
 # reproductibilité des simulations
 set.seed(2020)
 
+# choisir le chapitre (si vous passez par le projet analyse-donnees-livre-2025.Rproj)
+# si vous passez par le projet chapitre_X.Rproj, ignorez cette commande
+
+setwd("chapitre_6")
+
 ## jeux de données -------------------------------------------------------------
 
 reptiles <- read.csv2("donnees/reptiles_languedoc.csv", header = T, row.names = 1)
@@ -282,6 +287,7 @@ recordPlot(cp1)
 # Pour coder une ACP. Par défaut, R affiche une fenêtre et demande de sélectionner le nombre de composantes voulue, puis Entrée:  
 
 pc <- dudi.pca(clim.lr) # sélectionner 2 composantes + entrée
+2
 
 # Vous pouvez aussi sélectionner a priori le nombre de composantes à conserver :
 
@@ -488,6 +494,7 @@ amphi.dist <- vegdist(amphi, method = "bray")
 # ordination (voir l'éboulis des valeurs propres négatives -  à faire tourner dans la console)
 
 amphi.pco <- dudi.pco(amphi.dist)
+10
 
 # ordination (on garde toutes les composantes)
 
@@ -568,7 +575,7 @@ pc.petrel.scr
 detach("package:adegraphics", unload =
          TRUE)
 
-# cercles de corrélations
+# FIGURE 6.30 : cercles de corrélations
 
 s1 <- fviz_pca_var(pc.petrel, axes = c(1, 2), title = "") +
   labs(subtitle =
