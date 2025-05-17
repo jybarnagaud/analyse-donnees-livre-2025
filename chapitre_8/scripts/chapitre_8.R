@@ -78,6 +78,11 @@ theme_set(theme_light(base_size = 16))
 
 set.seed(150)
 
+# choisir le chapitre (si vous passez par le projet analyse-donnees-livre-2025.Rproj)
+# si vous passez par le projet chapitre_X.Rproj, ignorez cette commande
+
+setwd("chapitre_8")
+
 ## jeux de données -------------------------------------------------------------
 
 lomolino <- read.csv2("donnees/lomolino.csv", dec = ".", row.names = 1)
@@ -1059,7 +1064,7 @@ N  <- nrow(rifleman)
 p  <- length(coef(rif.zip))
 sum(res.rif.zip ^ 2) / (N - p)
 
-# surdispersion avec DHARMa (nécessite de recoder la ZIP avec la librairie glmmTMB, voir : https://github.com/florianhartig/DHARMa/issues/16)
+# FIGURE 8.36: surdispersion avec DHARMa (nécessite de recoder la ZIP avec la librairie glmmTMB, voir : https://github.com/florianhartig/DHARMa/issues/16)
 
 rif.zip.2 <-
   glmmTMB(
