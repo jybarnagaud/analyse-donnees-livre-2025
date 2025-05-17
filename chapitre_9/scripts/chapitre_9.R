@@ -68,6 +68,11 @@ theme_set(theme_light(base_size = 16))
 
 set.seed(2020)
 
+# choisir le chapitre (si vous passez par le projet analyse-donnees-livre-2025.Rproj)
+# si vous passez par le projet chapitre_X.Rproj, ignorez cette commande
+
+setwd("chapitre_9")
+
 ## jeux de données -------------------------------------------------------------
 
 lomolino <- read.csv2("donnees/Lomolino.csv", dec = ".")
@@ -238,7 +243,7 @@ par(mfrow = c(1, 2))
 plot(avg.clim)
 plot(avg.clim, intercept = F)
 
-# autre représentation possible :
+# FIGURE 9.4 - autre représentation possible :
 
 p1 <- plot_model(avg.clim,
                  type = "est",
@@ -414,7 +419,7 @@ brg %>%
 
 # avec ggeffect (comme dans le livre)
 
-plot(ggeffect(bg.mod.int, terms = c("date_rel_recal", "essence")), residuals = T) +
+plot(ggeffect(bg.mod.int, terms = c("date_rel_recal", "essence")), show_residuals = T) +
   labs(x = "Date relative", y = "Débourrement", col = "Essence") +
   theme_classic() +
   scale_colour_manual(
@@ -483,7 +488,7 @@ plot(mod.mulette)
 
 summary(mod.mulette)
 
-# plots
+# FIGURE 9.14 : représentation des effets
 
 p1 <-
   plot(ggpredict(mod.mulette, terms = c("coniferes", "pente[0,1,100]")), show_residuals = TRUE) +
@@ -662,7 +667,7 @@ ggplot(z) +
   labs(x = "NAO décembre - mars", y = "Taux de reproduction") +
   theme_classic()
 
-## formes des courbes produites par un polynôme de second degré
+## FIGURE 9.23 : formes des courbes produites par un polynôme de second degré
 
 # formes quadratiques simulées inspirées de https://en.wikipedia.org/wiki/Quadratic_equation
 
@@ -823,7 +828,7 @@ visreg(tetras.mod.quad, xvar = "NAOdjfm", scale = "response")
 
 # avec ggeffect
 
-plot(ggeffect(tetras.mod.quad, terms = "NAOdjfm"), residuals = T) +
+plot(ggeffect(tetras.mod.quad, terms = "NAOdjfm"), show_residuals = T) +
   labs(title = "", x = "NAO décembre-mars", y = "Succès reproducteur marginal") +
   theme_classic()
 
@@ -913,7 +918,7 @@ visreg(tetras.mod.quad.int, xvar = "NAOdjfm", by = "RN")
 # avec ggeffect
 
 plot(ggeffect(tetras.mod.quad.int, terms = c("NAOdjfm", "RN")),
-     residuals = T,
+     show_residuals = T,
      facet = T) +
   labs(title = "", x = "NAO décembre-mars", y = "Succès reproducteur marginal") +
   scale_color_viridis_d(aesthetics = c("color", "fill")) +
@@ -972,7 +977,7 @@ visreg(rantem.mod.quad, xvar = "an")
 
 # avec ggeffect
 
-plot(ggeffect(rantem.mod.quad, terms = "an"), residuals = T) +
+plot(ggeffect(rantem.mod.quad, terms = "an"), show_residuals = T) +
   labs(title = "Grenouille rousse", x = "Années", y = "Date de sortie") +
   theme_classic()
 
@@ -1059,7 +1064,7 @@ par(mfrow = c(2, 2))
 plot(
   rantem.mod.gam.k3,
   shift = coef(rantem.mod.gam)[1],
-  residuals = T,
+  show_residuals = T,
   cex = 5,
   rug = F,
   shade = T,
@@ -1072,7 +1077,7 @@ legend("topright", legend = paste(c("k max = ", "edf ="), c(3, round(
 plot(
   rantem.mod.gam.k4,
   shift = coef(rantem.mod.gam)[1],
-  residuals = T,
+  show_residuals = T,
   cex = 5,
   rug = F,
   shade = T,
@@ -1085,7 +1090,7 @@ legend("topright", legend = paste(c("k max = ", "edf ="), c(4, round(
 plot(
   rantem.mod.gam.k5,
   shift = coef(rantem.mod.gam)[1],
-  residuals = T,
+  show_residuals = T,
   cex = 5,
   rug = F,
   shade = T,
@@ -1098,7 +1103,7 @@ legend("topright", legend = paste(c("k max = ", "edf ="), c(5, round(
 plot(
   rantem.mod.gam.k6,
   shift = coef(rantem.mod.gam)[1],
-  residuals = T,
+  show_residuals = T,
   cex = 5,
   rug = F,
   shade = T,
