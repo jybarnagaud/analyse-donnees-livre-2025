@@ -245,11 +245,18 @@ plot(avg.clim, intercept = F)
 
 # FIGURE 9.4 - autre représentation possible :
 
+base_size <- 14
+
 p1 <- plot_model(avg.clim,
                  type = "est",
                  title = "",
                  colors = "viridis") +
-  labs(x = "Coefficient de pente", y = "Ville") + font_size(axis_title.x = 12, axis_title.y = 12)
+  labs(x = "Coefficient de pente", y = "Ville") +
+  theme_minimal(base_size = base_size) +
+  theme(
+    legend.position = "none",
+    plot.margin = margin(5, 5, 5, 5)
+  )
 
 p2 <- plot_model(
   avg.clim,
@@ -258,8 +265,12 @@ p2 <- plot_model(
   title = "",
   colors = "viridis"
 ) +
-  theme_classic() +
-  labs(x = "Années", y = "Température moyenne annuelle prédite")
+  labs(x = "Années", y = "Température moyenne annuelle prédite") +
+  theme_classic(base_size = base_size) +
+  theme(
+    legend.position = "none",
+    plot.margin = margin(5, 5, 5, 5)
+  )
 
 p3 <- plot_model(
   avg.clim,
@@ -268,8 +279,12 @@ p3 <- plot_model(
   title = "",
   colors = "viridis"
 ) +
-  theme_classic() +
-  labs(x = "Villes", y = "Température moyenne annuelle prédite")
+  labs(x = "Villes", y = "Température moyenne annuelle prédite") +
+  theme_classic(base_size = base_size) +
+  theme(
+    legend.position = "none",
+    plot.margin = margin(5, 5, 5, 5)
+  )
 
 p4 <- plot_model(
   avg.clim,
@@ -278,12 +293,22 @@ p4 <- plot_model(
   title = "",
   colors = "viridis"
 ) +
-  theme_classic() +
-  labs(x = "Cumul de précipiations", y = "Température moyenne annuelle prédite")
+  labs(x = "Cumul de précipitations", y = "Température moyenne annuelle prédite") +
+  theme_classic(base_size = base_size) +
+  theme(
+    legend.position = "none",
+    plot.margin = margin(5, 5, 5, 5)
+  )
 
-(p1 + p2) / (p3 + p4) +
-  theme_sjplot(base_size = 12, base_family = "") +
-  plot_annotation(tag_levels = "A")
+# Assemblage avec patchwork
+final_plot <- (p1 + p2) / (p3 + p4) +
+  plot_annotation(tag_levels = "A") &
+  theme(
+    plot.tag = element_text(size = 16, face = "bold"),
+    plot.margin = margin(5, 5, 5, 5)
+  )
+
+final_plot
 
 ## 9.2  Modéliser des interactions entre variables------------------------------
 
@@ -671,90 +696,50 @@ ggplot(z) +
 
 # formes quadratiques simulées inspirées de https://en.wikipedia.org/wiki/Quadratic_equation
 
-# B = 0
+# Paramètres généraux
 n <- 200
 x <- seq(-2, 2, length = n)
 a <- c(-2, -1, 0, 1, 2)
 grid <- expand.grid(x = x, a = a)
-b <- 0
 c <- 0
-y <- grid$a * grid$x ^ 2 + b * grid$x + c
+linewidth <- 1.5
+base_size <- 14  # Taille globale du texte
 
-df <- data.frame(y = y,
-                 x = x,
-                 shape = c(
-                   rep("a = -2", n),
-                   rep("a = -1", n),
-                   rep("a = 0", n),
-                   rep("a = 1", n),
-                   rep("a = 2", n)
-                 ))
-
-p1 <- ggplot(df) +
-  geom_line(aes(
+# Fonction générique pour construire un graphique
+make_plot <- function(b, label) {
+  y <- grid$a * grid$x ^ 2 + b * grid$x + c
+  df <- data.frame(
     x = x,
     y = y,
-    group = shape,
-    color = shape
-  ), linewidth = 1.5) +
-  labs(color = NULL, y = expression (y = ax ^ 2 + bx + c)) +
-  theme_classic() +
-  labs(subtitle = "(A)") +
-  scale_color_viridis_d()
+    a = factor(rep(paste0("a = ", a), each = n), levels = paste0("a = ", a))
+  )
+  
+  ggplot(df, aes(x = x, y = y, color = a)) +
+    geom_line(linewidth = linewidth) +
+    scale_color_viridis_d(name = "Valeur de a") +
+    labs(
+      x = "x",
+      y = expression(y == ax^2 + bx + c),
+      subtitle = label
+    ) +
+    theme_classic(base_size = base_size) +
+    theme(
+      legend.position = "bottom",
+      legend.title = element_text(size = base_size),
+      legend.text = element_text(size = base_size - 1),
+      plot.subtitle = element_text(face = "bold")
+    )
+}
 
-# B = 2
-b <- 1
-y <- grid$a * grid$x ^ 2 + b * grid$x + c
+# Générer les trois panels
+p1 <- make_plot(b = 0, label = "(A) b = 0")
+p2 <- make_plot(b = 1, label = "(B) b = 1")
+p3 <- make_plot(b = -2, label = "(C) b = -2")
 
-df <- data.frame(y = y,
-                 x = x,
-                 shape = c(
-                   rep("a = -2", n),
-                   rep("a = -1", n),
-                   rep("a = 0", n),
-                   rep("a = 1", n),
-                   rep("a = 2", n)
-                 ))
-
-p2 <- ggplot(df) +
-  geom_line(aes(
-    x = x,
-    y = y,
-    group = shape,
-    color = shape
-  ), linewidth = 1.5) +
-  labs(color = NULL, y = expression (y = ax ^ 2 + bx + c)) +
-  theme_classic() +
-  labs(subtitle = "(B)") +
-  scale_color_viridis_d()
-
-# B = 1
-b <- (-2)
-y <- grid$a * grid$x ^ 2 + b * grid$x + c
-
-df <- data.frame(y = y,
-                 x = x,
-                 shape = c(
-                   rep("a = -2", n),
-                   rep("a = -1", n),
-                   rep("a = 0", n),
-                   rep("a = 1", n),
-                   rep("a = 2", n)
-                 ))
-
-p3 <- ggplot(df) +
-  geom_line(aes(
-    x = x,
-    y = y,
-    group = shape,
-    color = shape
-  ), linewidth = 1.5) +
-  labs(color = NULL, y = expression (y = ax ^ 2 + bx + c)) +
-  theme_classic() +
-  labs(subtitle = "(C)") +
-  scale_color_viridis_d()
-
-p1 + p2 + p3
+# Combiner avec patchwork (et une seule légende en bas)
+(p1 | p2 | p3) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
 
 ## exploration graphique des données
 
