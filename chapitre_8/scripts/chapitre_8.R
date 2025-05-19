@@ -1064,7 +1064,8 @@ N  <- nrow(rifleman)
 p  <- length(coef(rif.zip))
 sum(res.rif.zip ^ 2) / (N - p)
 
-# FIGURE 8.36: surdispersion avec DHARMa (nécessite de recoder la ZIP avec la librairie glmmTMB, voir : https://github.com/florianhartig/DHARMa/issues/16)
+# FIGURE 8.36: surdispersion avec DHARMa 
+# (nécessite de recoder la ZIP avec la librairie glmmTMB, voir : https://github.com/florianhartig/DHARMa/issues/16)
 
 rif.zip.2 <-
   glmmTMB(
