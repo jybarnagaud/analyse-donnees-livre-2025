@@ -286,6 +286,8 @@ p4 <- plot_model(
   theme_sjplot(base_size = 12, base_family = "") +
   plot_annotation(tag_levels = "A")
 
+ggsave("outputs/C9F4.png", width = 12, height = 8)
+
 ## 9.2  Modéliser des interactions entre variables------------------------------
 
 ## Une interaction variable qualitative - variable quantitative continue
@@ -2156,6 +2158,8 @@ p3 <- make_plot(b = -2, label = "(C) b = -2")
 (p1 | p2 | p3) +
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom")
+
+ggsave("outputs/C9F23.png",width = 12, height = 5)
 
 ## exploration graphique des données
 
