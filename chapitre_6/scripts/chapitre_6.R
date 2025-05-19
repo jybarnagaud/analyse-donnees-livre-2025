@@ -577,18 +577,39 @@ detach("package:adegraphics", unload =
 
 # FIGURE 6.30 : cercles de corrélations
 
-s1 <- fviz_pca_var(pc.petrel, axes = c(1, 2), title = "") +
-  labs(subtitle =
-         "(a)")
-s2 <- fviz_pca_var(pc.petrel, axes =
-                     c(1, 3), title = "") +
-  labs(subtitle =
-         "(b)")
-s3 <- fviz_pca_var(pc.petrel, axes =
-                     c(2, 3), title = "") +
-  labs(subtitle =
-         "(c)")
-(s1 + s2) / (s3 + plot_spacer())
+# Pourcentage d'inertie (optionnel mais recommandé)
+eig <- get_eigenvalue(pc.petrel)
+
+# Fonction générique pour les plots PCA
+pca_plot <- function(pc.obj, axes, label) {
+  fviz_pca_var(
+    pc.obj,
+    axes = axes,
+    title = "",
+    repel = TRUE,
+    col.var = "contrib", # mettre en valeur les contributions
+    gradient.cols = viridis::viridis(100),
+    geom.var = c("arrow", "text")
+  ) +
+    labs(
+      subtitle = paste0("(", label, ") Dim ", axes[1], " vs Dim ", axes[2],
+                        " (", round(eig[axes[1], 2]), "%, ", round(eig[axes[2], 2]), "%)")
+    ) +
+    theme_minimal(base_size = 13) +
+    theme(
+      plot.subtitle = element_text(face = "bold"),
+      legend.position = "none"
+    )
+}
+
+# Générer les 3 graphes
+s1 <- pca_plot(pc.petrel, c(1, 2), "a")
+s2 <- pca_plot(pc.petrel, c(1, 3), "b")
+s3 <- pca_plot(pc.petrel, c(2, 3), "c")
+
+# Disposition 2x2 équilibrée
+((s1 + s2) / (plot_spacer() + s3 + plot_spacer())) +
+  plot_layout(widths = c(1, 1, 1))
 
 # différenciation des groupes
                                                                 
