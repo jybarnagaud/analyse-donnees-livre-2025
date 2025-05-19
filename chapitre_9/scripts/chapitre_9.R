@@ -882,15 +882,15 @@ var_max
 plot(ggeffect(tetras.mod.quad, terms = "NAOdjfm"), show_residuals = T) +
   labs(title = "", x = "NAO décembre-mars", y = "Succès reproducteur marginal") +
   geom_vline(
-    xintercept = xmax$maximum,
+    xintercept = xmax,
     col = "#3b528b",
     linetype = "dashed"
   ) +
   theme_classic() +
   annotate(
     "rect",
-    xmin = xmax$maximum - 1.96 * sqrt(var_max),
-    xmax = xmax$maximum + 1.96 * sqrt(var_max),
+    xmin = xmax - 1.96 * sqrt(var_max),
+    xmax = xmax + 1.96 * sqrt(var_max),
     ymin = -Inf,
     ymax = Inf,
     fill = "#3b528b",
