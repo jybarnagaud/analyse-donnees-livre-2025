@@ -101,43 +101,67 @@ summary(lomolino)
 
 # exploration graphique
 
-p1 <- lomolino %>%
-  ggplot() +
-  aes(x = distance_source, y = n_especes) +
-  geom_point(size = 3,
-             alpha = 0.5,
-             col = "#3b528b") +
-  labs(x = "Distance à la source (km)", y = "Richesse spécifique") +
-  theme_classic()
+# p1 <- lomolino %>%
+#   ggplot() +
+#   aes(x = distance_source, y = n_especes) +
+#   geom_point(size = 3,
+#              alpha = 0.5,
+#              col = "#3b528b") +
+#   labs(x = "Distance à la source (km)", y = "Richesse spécifique") +
+#   theme_classic()
+# 
+# p2 <- lomolino %>%
+#   ggplot() +
+#   aes(x = latitude, y = n_especes) +
+#   geom_point(size = 3,
+#              alpha = 0.5,
+#              col = "#3b528b") +
+#   labs(x = "Latitude (°)", y = "Richesse spécifique") +
+#   theme_classic()
+# 
+# p3 <- lomolino %>%
+#   ggplot() +
+#   aes(x = surface, y = n_especes) +
+#   geom_point(size = 3,
+#              alpha = 0.5,
+#              col = "#3b528b") +
+#   labs(x = "Surface (km²)", y = "Richesse spécifique") +
+#   theme_classic()
+# 
+# p4 <- lomolino %>%
+#   ggplot() +
+#   aes(x = log(surface), y = n_especes) +
+#   geom_point(size = 3,
+#              alpha = 0.5,
+#              col = "#3b528b") +
+#   labs(x = "log(Surface (km²))", y = "Richesse spécifique") +
+#   theme_classic()
+# 
+# (p1 + p2) / (p3 + p4) + plot_annotation(tag_levels = 'A')
 
-p2 <- lomolino %>%
-  ggplot() +
-  aes(x = latitude, y = n_especes) +
-  geom_point(size = 3,
-             alpha = 0.5,
-             col = "#3b528b") +
-  labs(x = "Latitude (°)", y = "Richesse spécifique") +
-  theme_classic()
+# Couleur utilisée
+pt_col <- "#3b528b"
+base_size <- 14
 
-p3 <- lomolino %>%
-  ggplot() +
-  aes(x = surface, y = n_especes) +
-  geom_point(size = 3,
-             alpha = 0.5,
-             col = "#3b528b") +
-  labs(x = "Surface (km²)", y = "Richesse spécifique") +
-  theme_classic()
+# Fonction graphique générique
+make_scatter <- function(xvar, xlab) {
+  ggplot(lomolino, aes(x = {{ xvar }}, y = n_especes)) +
+    geom_point(size = 3, alpha = 0.6, color = pt_col) +
+    labs(x = xlab, y = "Richesse spécifique") +
+    theme_classic(base_size = base_size) +
+    theme(plot.margin = margin(5, 5, 5, 5))
+}
 
-p4 <- lomolino %>%
-  ggplot() +
-  aes(x = log(surface), y = n_especes) +
-  geom_point(size = 3,
-             alpha = 0.5,
-             col = "#3b528b") +
-  labs(x = "log(Surface (km²))", y = "Richesse spécifique") +
-  theme_classic()
+p1 <- make_scatter(distance_source, "Distance à la source (km)")
+p2 <- make_scatter(latitude, "Latitude (°)")
+p3 <- make_scatter(surface, "Surface (km²)")
+p4 <- make_scatter(log(surface), expression(log("Surface (km"^2*")")))
 
-(p1 + p2) / (p3 + p4) + plot_annotation(tag_levels = 'A')
+# Assemblage avec lettrage clair
+(p1 + p2) / (p3 + p4) +
+  plot_annotation(tag_levels = "A") &
+  theme(plot.tag = element_text(face = "bold", size = 16))
+
 
 # régulariser la variable surface en la transformant en log :
 
@@ -522,29 +546,88 @@ p3 <- plot(
 
 # effet distance aux minimum et maximum de latitude
 
+# p4 <- plot(
+#   ggpredict(
+#     lomo.pois,
+#     terms = "distance_source",
+#     condition = c(latitude = min(lomolino$latitude))
+#   ),
+#   show_residuals = T,
+#   show_title = F
+# ) +
+#   labs(x = "Distance à la source (km)", y = "Richesse spécifique marginale", title = "marge sud, log(surface moyenne)") +
+#   theme_classic()
+# 
+# p5 <- plot(
+#   ggpredict(lomo.pois, terms = "distance_source", condition = c(LATI = max(lomolino$latitude))),
+#   show_residuals = T,
+#   show_title = F
+# ) +
+#   labs(x = "Distance à la source (km)", y = "Richesse spécifique marginale", title = "marge nord, log(surface moyenne)") +
+#   theme_classic()
+# 
+# p1b <- p1 + labs(title = "latitude moyenne, log(surface moyenne)")
+# 
+# p1b + p4 + p5
+# 
+
+base_size <- 14
+
+# Panel p1 : latitude moyenne (pas de condition particulière ici)
+p1 <- plot(
+  ggeffect(lomo.pois, terms = "distance_source"),
+  show_residuals = TRUE,
+  show_title = FALSE
+) +
+  labs(
+    x = "Distance à la source (km)",
+    y = "Richesse spécifique marginale",
+    title = "Latitude moyenne,\nlog(surface moyenne)"
+  ) +
+  theme_classic(base_size = base_size) +
+  theme(
+    plot.title = element_text(size = base_size, face = "bold"),
+    plot.margin = margin(5, 5, 5, 5)
+  )
+
+# Panel p4 : marge sud
 p4 <- plot(
-  ggpredict(
-    lomo.pois,
-    terms = "distance_source",
-    condition = c(latitude = min(lomolino$latitude))
-  ),
-  show_residuals = T,
-  show_title = F
+  ggpredict(lomo.pois, terms = "distance_source", condition = c(latitude = min(lomolino$latitude))),
+  show_residuals = TRUE,
+  show_title = FALSE
 ) +
-  labs(x = "Distance à la source (km)", y = "Richesse spécifique marginale", title = "marge sud, log(surface moyenne)") +
-  theme_classic()
+  labs(
+    x = "Distance à la source (km)",
+    y = "Richesse spécifique marginale",
+    title = "Marge sud,\nlog(surface moyenne)"
+  ) +
+  theme_classic(base_size = base_size) +
+  theme(
+    plot.title = element_text(size = base_size, face = "bold"),
+    plot.margin = margin(5, 5, 5, 5)
+  )
 
+# Panel p5 : marge nord
 p5 <- plot(
-  ggpredict(lomo.pois, terms = "distance_source", condition = c(LATI = max(lomolino$latitude))),
-  show_residuals = T,
-  show_title = F
+  ggpredict(lomo.pois, terms = "distance_source", condition = c(latitude = max(lomolino$latitude))),
+  show_residuals = TRUE,
+  show_title = FALSE
 ) +
-  labs(x = "Distance à la source (km)", y = "Richesse spécifique marginale", title = "marge nord, log(surface moyenne)") +
-  theme_classic()
+  labs(
+    x = "Distance à la source (km)",
+    y = "Richesse spécifique marginale",
+    title = "Marge nord,\nlog(surface moyenne)"
+  ) +
+  theme_classic(base_size = base_size) +
+  theme(
+    plot.title = element_text(size = base_size, face = "bold"),
+    plot.margin = margin(5, 5, 5, 5)
+  )
 
-p1b <- p1 + labs(title = "latitude moyenne, log(surface moyenne)")
+# Assemblage final : sur une ligne
+(p1 | p4 | p5) +
+  plot_layout(guides = "collect")
 
-p1b + p4 + p5
 
 ## 8.2 Modéliser des données binaires-------------------------------------------
 
@@ -830,15 +913,32 @@ sum(rifleman$total == 0) / nrow(rifleman)  # proportion de zéros dans le jeu de
 
 rif.sim <- rpois(1000, mean(rifleman$total))
 
-rif.sim %>%
-  as.data.frame() %>%
-  ggplot() +
-  aes(x = rif.sim) +
-  geom_histogram(bins = 10,
-                 color = 'black',
-                 fill = 'white') +
-  labs(x = "Données simulées", y = "Effectif") +
-  theme_classic()
+# rif.sim %>%
+#   as.data.frame() %>%
+#   ggplot() +
+#   aes(x = rif.sim) +
+#   geom_histogram(bins = 10,
+#                  color = 'black',
+#                  fill = 'white') +
+#   labs(x = "Données simulées", y = "Effectif") +
+#   theme_classic()
+
+ggplot(data.frame(valeur = rif.sim), aes(x = valeur)) +
+  geom_histogram(
+    bins = 10,
+    color = "black",
+    fill = "#21908CFF",
+    alpha = 0.8
+  ) +
+  labs(
+    x = "Données simulées",
+    y = "Effectif"
+  ) +
+  theme_classic(base_size = 14) +
+  theme(
+    axis.title = element_text(face = "bold"),
+    plot.margin = margin(5, 5, 5, 5)
+  )
 
 mean(rif.sim)
 var(rif.sim)
@@ -951,7 +1051,16 @@ sum(res.rif.nb ^ 2) / (N - p)
 
 # avec DHARMa:
 
-testDispersion(rif.negbin)
+# testDispersion(rif.negbin)
+
+par(
+  cex.main = 1.4,     # taille du titre
+  cex.lab = 1.3,      # taille des labels d'axes
+  cex.axis = 1.2,     # taille des graduations
+  mar = c(5, 5, 4, 2) # marges inf, gauche, haut, droite
+)
+testDispersion(rif.negbin)  # ou testDispersion(rif.negbin)
+par(mfrow = c(1, 1))  # réinitialise la disposition graphique (facultatif)
 
 # résultats :
 
@@ -1225,3 +1334,4 @@ df %>%
     y = -4,
     label = c("couche poissonienne", "couche binomiale")
   )
+
