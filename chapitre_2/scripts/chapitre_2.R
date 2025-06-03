@@ -6,7 +6,7 @@
 #                       -------Chapitre 2-------                               #
 
 ## commandes R pour la reproduction des exemples du chapitre 
-## à jour 03 juin 2025
+## mis à jour 03 juin 2025
 
 ## Il est recommandé d'utiliser ce script avec la version de R la plus récente, 
 # consulter https://cran.r-project.org/
