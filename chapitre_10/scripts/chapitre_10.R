@@ -73,6 +73,11 @@ theme_set(theme_light(base_size = 16))
 
 set.seed(2020)
 
+# choisir le chapitre (si vous passez par le projet analyse-donnees-livre-2025.Rproj)
+# si vous passez par le projet chapitre_X.Rproj, ignorez cette commande
+
+setwd("chapitre_10")
+
 # options pour les cartes
 
 mapviewOptions(fgb = FALSE)
