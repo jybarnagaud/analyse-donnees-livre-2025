@@ -36,6 +36,8 @@ pacman::p_load(
   ggdendro, 
   corrplot,
   GGally,
+  formattable,
+  readxl,
   
   # multivarié
   ade4, # la librairie que nous utilisons pour les analyses multivariées
@@ -819,3 +821,6 @@ s.label(cca.rept$c1,
         boxes = FALSE,
         clabel = 0.7)
 s.arrow(cca.rept$cor, add.plot = T, clab = 1)
+
+
+
