@@ -249,17 +249,6 @@ ggplot(mesanges) +
   theme_classic() +
   scale_color_viridis_d()
 
-# même diagramme, adapté à la couverture du livre
-
-ggplot(mesanges) +
-  aes(x = tarse, y = poids, color = espece) +
-  geom_point(size = 3, alpha = 0.7) +
-  labs(x = "longueur du tarse (mm)", y = "poids (g)", title = "Mésanges, forêt d'Orléans", col = "espèce :") +
-  theme_classic() +
-  theme(legend.position = "top")+
-  scale_color_manual( values = c("steelblue","goldenrod"), labels = c("Mésange bleue", "Mésange charbonnière"))
-ggsave("outputs/cover-fig.png", width = 5, height = 5)
-
 # facetting (un graphique par catégorie d'une variable facteur)
 
 ggplot(mesanges) +

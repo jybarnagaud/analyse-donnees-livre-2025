@@ -32,15 +32,19 @@ pacman::p_load(# génériques
   formatR,
   jtools,
   reshape2,
+  formattable,
+  readxl,
   
   # graphiques
   patchwork,
   viridis,
   ggplot2,
   cowplot,
+  factoextra,
   
   # statistiques
-  lmtest)
+  lmtest,
+  ade4)
 
 # pour installer manuellement chaque package : install.packages(nomdupackage)
 # pour charger manuellement chaque package : library(nomdupackage)
@@ -519,3 +523,71 @@ ggplot(df.glm) +
   scale_color_viridis_d()
 
 ggsave("outputs/A2F3.png", width = 6, height = 6)
+
+## figures de la couverture du livre -------------------------------------------
+
+#### Figures de la couverture du livre ####
+
+##### première de couverture
+
+###### table
+
+tab.couv <- read_xlsx("donnees/reptiles_languedoc.xlsx")
+tab.format <- formattable(tab.couv)
+tab.format
+tab.format2 <- formattable(tab.couv, align = c("l", rep("r", NCOL(tab.couv) - 1)))
+tab.format2
+
+###### densité de probabilité
+
+bufo <- read.csv2("donnees/pheno_bufobufo.csv", dec= ".")
+
+dens <- density(bufo$TmaxFev.Mars)
+df <- data.frame(x = dens$x, y = dens$y)
+probs <- c(0.1, 0.25, 0.5,  0.9)
+quantiles <- quantile(bufo$TmaxFev.Mars, prob = probs)
+df$quant <- factor(findInterval(df$x, quantiles))
+ggplot(df, aes(x, y))+
+  geom_line()+ 
+  geom_ribbon(aes(ymin = 0, ymax = y, fill = quant))+
+  scale_x_continuous(breaks = quantiles)+
+  scale_fill_brewer(guide="none")+
+  labs(x = "Températures, °C", y = "Densité de probabilité")
+
+ggsave("outputs/cover_2.png", width = 8, height = 7, bg = "white")
+
+###### capture R
+
+avi <- read.csv2("donnees/avifaune_perche.csv")
+summary(avi)
+
+###### ACP
+climat <- read.csv2("donnees/climat_LR_ACP.csv", row.names = 1)
+pc.clim <- dudi.pca(climat, scannf = F, nf = 2)
+
+fviz_pca_biplot(
+  pc.clim,
+  title = "ACP : climat d'Occitanie",
+  col.ind = "steelblue",
+  col.var = "black",
+  label = "var",
+  pointsize = 3,
+  alpha.ind = 0.5,
+  labelsize = 4
+)+
+  xlim(-4,4)+
+  ylim(-2,3)
+ggsave("outputs/cover_1.png", width = 7, height = 7, bg = "white")
+
+# quatrième de couverture
+
+mesanges <- read.csv2("donnees/mesures_nichoirs.csv", dec = ".")
+ggplot(mesanges) +
+  aes(x = tarse, y = poids, color = espece) +
+  geom_point(size = 3, alpha = 0.7) +
+  labs(x = "longueur du tarse (mm)", y = "poids (g)", title = "Mésanges, forêt d'Orléans", col = "espèce :") +
+  theme_classic() +
+  theme(legend.position = "top")+
+  scale_color_manual( values = c("steelblue","goldenrod"), labels = c("Mésange bleue", "Mésange charbonnière"))
+# ggsave("outputs/cover-fig.png", width = 5, height = 5)
+

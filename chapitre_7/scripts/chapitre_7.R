@@ -299,7 +299,7 @@ plot(
   bufo$TmaxFev.Mars,
   bufo$date_resc,
   xlab = "Température (février-mars, °C)",
-  ylab = "Date julienne de première sortie",
+  ylab = "Date de première sortie",
   cex.lab = 1.5,
   bty = "n",
   type = "n"
