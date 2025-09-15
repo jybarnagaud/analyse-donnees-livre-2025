@@ -64,7 +64,7 @@ set.seed(2020)
 # choisir le chapitre (si vous passez par le projet analyse-donnees-livre-2025.Rproj)
 # si vous passez par le projet chapitre_X.Rproj, ignorez cette commande
 
-setwd("chapitre_6")
+#setwd("chapitre_6")
 
 ## jeux de données -------------------------------------------------------------
 
